@@ -1,0 +1,641 @@
+{
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 74,
+      "sha256": "a9c579c24b4d3b05849b9c662fec4b09ec084b4bdac2db51148a3aa28dc3be30"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 84,
+      "sha256": "ccb68019b2086b548f3708c30256b366d2db84b5913c408dc8a2ca16cd32b821"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 213,
+      "sha256": "cb2a75687c336d9765d72ce7e1c5ad5c0d232dc278e6b37130732713b39454c6"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 389,
+      "sha256": "0fe295c4cbb2d45310a06bb72292575d1af9e5dd9b7d8c842b4f47d0eea195f2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6075,
+      "sha256": "25c59edc990108c0b97631a93cea7a7a597472c81a1d29d3556ea1bf1791a43e"
+    },
+    {
+      "path": "app.py",
+      "bytes": 25187,
+      "sha256": "918c291524260f9aef1904839c420b95ebc4d4834ace25ae4a40c76c31c31bf6"
+    },
+    {
+      "path": "backend/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "backend/application/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "backend/application/assessment.py",
+      "bytes": 1300,
+      "sha256": "4caccde006cae734205dbdde05f689d284380877d5f0b6c0e575a0cb1648405a"
+    },
+    {
+      "path": "backend/application/benchmark_guidance.py",
+      "bytes": 221,
+      "sha256": "6d12d77f24841b483a1717dd2f61516b73e54eed96664bc7ad4fea57dbdf3337"
+    },
+    {
+      "path": "backend/application/hypothesis_generation.py",
+      "bytes": 2642,
+      "sha256": "87a67d583d1f1b9c068e6ae3329eeedf32b060f743581eab3eaad72809838c31"
+    },
+    {
+      "path": "backend/application/hypothesis_verification.py",
+      "bytes": 1972,
+      "sha256": "218d7688d26e25809f569cc6dd44e8f87ddc443a81bce59757f59abbe68e812a"
+    },
+    {
+      "path": "backend/application/invariant_service.py",
+      "bytes": 10244,
+      "sha256": "48892333c715798d51a2330361f7e5ee771a1c5cfcba6a9030c2c3caac313f60"
+    },
+    {
+      "path": "backend/application/ports.py",
+      "bytes": 1447,
+      "sha256": "0bf75284a6d0a1973f468c001e4282dc834868dab37d875ee570305c56e15ebd"
+    },
+    {
+      "path": "backend/application/research_metrics.py",
+      "bytes": 4707,
+      "sha256": "96b5a77a2dbdd95e5a5c9b21d9bae2d4efc30a0ce37a64431baed88be62e2089"
+    },
+    {
+      "path": "backend/application/response_validation.py",
+      "bytes": 365,
+      "sha256": "6767d8ef6e341de2e8ae74892dde732c9c7e9b7fe3cdcdfab1ce3d4662c3e439"
+    },
+    {
+      "path": "backend/application/run_audit.py",
+      "bytes": 2693,
+      "sha256": "0a020f3bba0fb1f9696b6b59dd70bbf48d41f60c6b3153f9f89d91e3eab50dbd"
+    },
+    {
+      "path": "backend/application/source_benchmark_service.py",
+      "bytes": 9403,
+      "sha256": "71109f6b7c0b577ab5fbcf8ab0a1e80b142b59597287e441bb0dac304061b4a2"
+    },
+    {
+      "path": "backend/application/source_experiment_plan.py",
+      "bytes": 3532,
+      "sha256": "c54e3ce56bd4babcb68a24594e631e95f252cbf9cb04841b896fb4ecfc261823"
+    },
+    {
+      "path": "backend/application/source_pilot_metrics.py",
+      "bytes": 4136,
+      "sha256": "046f73da754bf9ae9ed8ab2f6b2c1bede831eed4eb76f71828656d23d69dd34e"
+    },
+    {
+      "path": "backend/application/textbook_service.py",
+      "bytes": 5714,
+      "sha256": "4db23aa60101e8e5bc6a1694f5131ce2b9918c309e110546c409499417fe18bf"
+    },
+    {
+      "path": "backend/domain/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "backend/domain/benchmarks.py",
+      "bytes": 11564,
+      "sha256": "5811ddeaadd57de032e91dc3c5b6fdc131fc43a728bee5707336bda3d92a703f"
+    },
+    {
+      "path": "backend/domain/candidate_contract.py",
+      "bytes": 485,
+      "sha256": "0e43e1ccf4952cbe4a9b119754a6fdc932f3415d0b7cdf9f2d6163da320e5937"
+    },
+    {
+      "path": "backend/domain/models.py",
+      "bytes": 5275,
+      "sha256": "20edc154c02425791d5b3734239bea1dca75e2043441957ee675f8f79c3a1003"
+    },
+    {
+      "path": "backend/domain/source_traces.py",
+      "bytes": 988,
+      "sha256": "c63c060b56ea9e207df6bae6a880834c7630ee14674213000579062ad5bf0fc4"
+    },
+    {
+      "path": "backend/domain/textbook_contract.py",
+      "bytes": 4705,
+      "sha256": "5e78d6ee20adecc1d481bdfa41931154e06ef4434a47469bf6f11831b6765a32"
+    },
+    {
+      "path": "backend/domain/verification_policy.py",
+      "bytes": 1512,
+      "sha256": "9e4a7094494421aab6c64f7b8755545f12d6a07887bafa816ff14e47080f64bc"
+    },
+    {
+      "path": "backend/infrastructure/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "backend/infrastructure/array_z3_checker.py",
+      "bytes": 26822,
+      "sha256": "5fab08e5e505d485fd38371f072240f1bbbb53c61ae14a5ee2cbebac1e878cfa"
+    },
+    {
+      "path": "backend/infrastructure/benchmark_z3_checker.py",
+      "bytes": 1736,
+      "sha256": "30eb38615ca78493e048fe8f6bd166ef0742b8a3e47ff72ba8c151d862e82bb2"
+    },
+    {
+      "path": "backend/infrastructure/c_source_inventory.py",
+      "bytes": 4955,
+      "sha256": "892423d266c3f270cb1a2bb983eb08f8403cd215db19374db2b57b97953284f5"
+    },
+    {
+      "path": "backend/infrastructure/candidate_parser.py",
+      "bytes": 5983,
+      "sha256": "040f2d827cd891bd339335e9cbc5ab03124a7c1de5a4e9f112888df14a665343"
+    },
+    {
+      "path": "backend/infrastructure/cbmc_checker.py",
+      "bytes": 9885,
+      "sha256": "a3603f39d034c57b029b83aafd103f1a59ae14241f135bf63f1e31fa1e4ed67e"
+    },
+    {
+      "path": "backend/infrastructure/code2inv_source_checker.py",
+      "bytes": 8389,
+      "sha256": "87dcd862715d0d1a502446aa30649123dd14b2b125c7bee7a8bf1a05b69e8b70"
+    },
+    {
+      "path": "backend/infrastructure/code2inv_trace_sampler.py",
+      "bytes": 6519,
+      "sha256": "c5bc95f041e6697dd05f87f44693e427f94024160feadcb93e1be972194cfbd7"
+    },
+    {
+      "path": "backend/infrastructure/experiment_repository.py",
+      "bytes": 1105,
+      "sha256": "356de6a47f75bf0006ba4d74c5c4fc39a0911b561f382862baaba3026188177c"
+    },
+    {
+      "path": "backend/infrastructure/integer_power_theory.py",
+      "bytes": 5928,
+      "sha256": "2b21f81a050e6bd1eda92f47047a0a6b7ae6f4daebb044b8521794d8e0402455"
+    },
+    {
+      "path": "backend/infrastructure/local_model_adapter.py",
+      "bytes": 6660,
+      "sha256": "b5f6e8199e37047a462e83c418c18fca3c0bd89caf782aac1dd42441af054b8d"
+    },
+    {
+      "path": "backend/infrastructure/loop_parser.py",
+      "bytes": 5000,
+      "sha256": "2350dc7c43fad163ace795c2a646ad980baa9a7e7811b0343b074060032d76d0"
+    },
+    {
+      "path": "backend/infrastructure/model_adapter.py",
+      "bytes": 5379,
+      "sha256": "d1cee72ef7cc295d3716203a78a2e8fd66a30abe18929e7a0f99db456d6d68c3"
+    },
+    {
+      "path": "backend/infrastructure/native_trace_instrumentation.py",
+      "bytes": 8829,
+      "sha256": "f06a3f3952ed278d73b9202dd79e71e032c0e417b1198684274c6e28bc097a20"
+    },
+    {
+      "path": "backend/infrastructure/native_trace_runtime.c",
+      "bytes": 6120,
+      "sha256": "869435f2aa0b792a23daced379b936634c08855638b2aebab493c08f398b24eb"
+    },
+    {
+      "path": "backend/infrastructure/native_trace_sampler.py",
+      "bytes": 8106,
+      "sha256": "4c8108bc05863ed664f69d459094767548a8936c35e121f85f4c85fb3df3faec"
+    },
+    {
+      "path": "backend/infrastructure/pattern_hypothesizer.py",
+      "bytes": 5748,
+      "sha256": "60fab3ad4c4ec08b5044e5a7aede4362aa2805ff6e0a80e88c356d0c23df5411"
+    },
+    {
+      "path": "backend/infrastructure/process_tree.py",
+      "bytes": 2931,
+      "sha256": "123c9d843db3e45357bb0b18094f25d3b6be03cbf75dd92599a058961b692a20"
+    },
+    {
+      "path": "backend/infrastructure/prompt_builder.py",
+      "bytes": 15745,
+      "sha256": "0da0ed88a5b51f0fafd9e2b04f4a749da0f57b03bf183c85de28309ed1ea1274"
+    },
+    {
+      "path": "backend/infrastructure/prompt_sections.py",
+      "bytes": 2092,
+      "sha256": "52c9db0f7dc1df3f0b2ced7e0101383ab90c293931c0875e4a1fa6f75713afe0"
+    },
+    {
+      "path": "backend/infrastructure/research_benchmarks.py",
+      "bytes": 1783,
+      "sha256": "052f207f110f63d6d74c5cfd8267bf1a58104f53a9d94fd84cb26778cf2e97fd"
+    },
+    {
+      "path": "backend/infrastructure/research_records.py",
+      "bytes": 967,
+      "sha256": "a84dfe5b1debdb4df2f3a03540bb5fd7e2fe0944bfa642a770299249a8627de1"
+    },
+    {
+      "path": "backend/infrastructure/reverse_constructor.py",
+      "bytes": 5519,
+      "sha256": "5514abc4cc45b8b11311356a3e077eee714c3c99785e6bb967583efbd49efa90"
+    },
+    {
+      "path": "backend/infrastructure/scan_loop_inference.py",
+      "bytes": 2140,
+      "sha256": "3016dc66ea48f14c9d82f5fd938c4e7dafe71d147bc508bd068080b23043e725"
+    },
+    {
+      "path": "backend/infrastructure/source_benchmark_repository.py",
+      "bytes": 1813,
+      "sha256": "5ff22ead6fe8e3ac021efdab084d4cde613a2a76bdf534225705bd7ecdb5bf75"
+    },
+    {
+      "path": "backend/infrastructure/source_trace_sampler.py",
+      "bytes": 2605,
+      "sha256": "7b58b5ebd29d53b87504b8905c3507a2f6dca0ac17ebbf9661b2c3f2077c65c0"
+    },
+    {
+      "path": "backend/infrastructure/svcomp_contracts.py",
+      "bytes": 7596,
+      "sha256": "84ddba6b76044f45c9f535dc389a027511e351ac35e03e21ad6c5da69b33cc5e"
+    },
+    {
+      "path": "backend/infrastructure/textbook_input_scaling.py",
+      "bytes": 1170,
+      "sha256": "4a6640ea6c6cac710c44f4c199283860d7f70f4fc49dae06bd02bede08d2f90e"
+    },
+    {
+      "path": "backend/infrastructure/textbook_prompt_builder.py",
+      "bytes": 1934,
+      "sha256": "02dd149241596b55e4de94cb5573fa842e0de5e65abd1febe21eb48cf2464b51"
+    },
+    {
+      "path": "backend/infrastructure/textbook_runtime.py",
+      "bytes": 8203,
+      "sha256": "09a95ee4c54238c15c4c9a28555d5f312f3dabdb13de0ede289818c5b447d6a7"
+    },
+    {
+      "path": "backend/infrastructure/trace_executor.py",
+      "bytes": 6140,
+      "sha256": "421007f9cc7de574c905f0f38ab6c87b62713f3060a9354430806b4baddcba32"
+    },
+    {
+      "path": "backend/infrastructure/z3_checker.py",
+      "bytes": 16916,
+      "sha256": "eedc66e0fc16a9dcdcc7d175ca4f5c5c762f7bbab8e2622f007cf0ea57f08760"
+    },
+    {
+      "path": "benchmarks/source_manifest.json",
+      "bytes": 192351,
+      "sha256": "5013cba4fbab54737b3d6e0e05ee5fafc4d468dfc7eb738277d9279eb1e33538"
+    },
+    {
+      "path": "bootstrap.py",
+      "bytes": 3111,
+      "sha256": "66452c7626ab68ebc2f04307c40df410adf86b5e014d6f77264b2ccf3e2494a4"
+    },
+    {
+      "path": "deploy/portable/Caddyfile",
+      "bytes": 75,
+      "sha256": "94f102ae21e165e1da91d5f0b9865fea87ae05fb1ed0e1300dbaa2a627a01803"
+    },
+    {
+      "path": "deploy/portable/Dockerfile",
+      "bytes": 2282,
+      "sha256": "5f1fc7c046577003da240981556853bdb6cd02ed1e7334007a504ccc7bcd4c56"
+    },
+    {
+      "path": "deploy/portable/Dockerfile.dockerignore",
+      "bytes": 504,
+      "sha256": "4eca3087af2483a8cc143b5044321c2dd95b34a9984d3063577718b3b39468a7"
+    },
+    {
+      "path": "deploy/portable/compose.gpu.yaml",
+      "bytes": 255,
+      "sha256": "2b8f2e1ef5596852edd952e7a8cbae400a4d0c12717c0b0c0f1cdc7ecda69c77"
+    },
+    {
+      "path": "deploy/portable/compose.models.yaml",
+      "bytes": 353,
+      "sha256": "4541700284df1329149f63ebe448bab3c0e7bf52e18c2a67c62e22ac7dbdb9c7"
+    },
+    {
+      "path": "deploy/portable/compose.setup.yaml",
+      "bytes": 124,
+      "sha256": "f4aaba49c0e719a7dd48da3f4198ea0da3d93fadcb15520bb2c1e85ee1f7b84f"
+    },
+    {
+      "path": "deploy/portable/compose.yaml",
+      "bytes": 1916,
+      "sha256": "e538f93a36c526ea13ed6e86677dbb6ccc99b98098a25c701eb0c32d668209d9"
+    },
+    {
+      "path": "deploy/portable/smoke_check.py",
+      "bytes": 4110,
+      "sha256": "c6de7fe971d7ab0973a8bbc7143aa7a20acb7724f7a1fa0722257bb345f9db8c"
+    },
+    {
+      "path": "docs/EXPERIMENTS.md",
+      "bytes": 5655,
+      "sha256": "833624c64e76c39b850040eec0f8563012d79b7e8c482238549351d8b56aba9a"
+    },
+    {
+      "path": "docs/PROVENANCE.md",
+      "bytes": 2915,
+      "sha256": "e05af39f47752fd916527f8c8b2793b8f5edb0b5bf26ab523406d7741190ace5"
+    },
+    {
+      "path": "docs/model_artifacts.json",
+      "bytes": 2867,
+      "sha256": "f29d6a2a254dbc78ecb419753dc11f247b2ad85662e383e3a9d620bf211a8cfd"
+    },
+    {
+      "path": "docs/study_protocol.json",
+      "bytes": 2323,
+      "sha256": "c44519e70871c25f2e9118decc8ca228dcee36a979fb55aeb2344692fd286348"
+    },
+    {
+      "path": "examples/countdown.py",
+      "bytes": 59,
+      "sha256": "a313e663b32d91faa20f1d59a35a315506f9898e53ff6f0dc88951b075d24d68"
+    },
+    {
+      "path": "examples/even_counter.py",
+      "bytes": 68,
+      "sha256": "38b3b0177bd74eb03569047a3b1383cd3052d5787f649b394b82092417e233d2"
+    },
+    {
+      "path": "examples/sum_to_n.py",
+      "bytes": 59,
+      "sha256": "f266326bc22f57b10645a68af86c1a9f1458299d72398a1110f1791305cce193"
+    },
+    {
+      "path": "presentation/__init__.py",
+      "bytes": 87,
+      "sha256": "b4a612fabfde066e673eff35d2159e0764c1c332d9d559bebf09f6d955a61ef4"
+    },
+    {
+      "path": "presentation/archive_browser.py",
+      "bytes": 3411,
+      "sha256": "f8caec951c4e2c739054c8bae162dbe4759b38163ffa1dfa3a34b1d3f9b2b91d"
+    },
+    {
+      "path": "presentation/assessment_labels.py",
+      "bytes": 1599,
+      "sha256": "dbd49b9cc054813e110b1f76d054d4250b43e9ff114fe2030e096e2414c13b22"
+    },
+    {
+      "path": "presentation/configuration.py",
+      "bytes": 193,
+      "sha256": "eefb10b04df1aea4fcb44689c98b48a8bb1f3b4d3fceb1094abae7d1ffbc507c"
+    },
+    {
+      "path": "presentation/hypotheses.py",
+      "bytes": 11905,
+      "sha256": "64ec0d1f0c5409cc36be475a88d1b06bcd441a06fb137b5ef7742e87b6c422fa"
+    },
+    {
+      "path": "presentation/research_dashboard.py",
+      "bytes": 21439,
+      "sha256": "df0c7a8344887defe95e618d678591abae2301bf0e9141b491962435fc6e1434"
+    },
+    {
+      "path": "presentation/source_benchmarks.py",
+      "bytes": 11044,
+      "sha256": "ca4d58c6a25cfca5848c132f196a975658185a77dfc10abcb9102cfe01f5c7a5"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 108,
+      "sha256": "5b6cc9bd4c11c055222c595231b78216174a0b60910cfef1b27e75265cd72dfb"
+    },
+    {
+      "path": "scripts/__init__.py",
+      "bytes": 61,
+      "sha256": "aafaad0a4465f300d8a2106c7cd57aae4fc29633f8593e900a771f02f3975a97"
+    },
+    {
+      "path": "scripts/compare_source_trace_audits.py",
+      "bytes": 3301,
+      "sha256": "ec9b500d140a46a27bd99bb89f957629485ae16da66233beffa682886fabfd32"
+    },
+    {
+      "path": "scripts/fetch_benchmarks.py",
+      "bytes": 5037,
+      "sha256": "29823bd045c7cbd0f09e52f6f21911b6703a334a6157f97107dcada36c51fd6c"
+    },
+    {
+      "path": "scripts/report_source_pilot.py",
+      "bytes": 9692,
+      "sha256": "777bb2666f3c7a7a6ee14998be22c48cefb9c6bae87fef1186649eafbe08a844"
+    },
+    {
+      "path": "scripts/resilient_checkpoint_io.py",
+      "bytes": 1210,
+      "sha256": "59347eb47f2a969f9a6c055f2702c4998d768f56a9cf9095399242885a606fd0"
+    },
+    {
+      "path": "scripts/run_research_experiment.py",
+      "bytes": 39265,
+      "sha256": "6afa454bd01a1b0ce7aa9f64f9e62d397ecbc4c50e384448eb88a3038f0675c2"
+    },
+    {
+      "path": "scripts/run_scaling_experiment.py",
+      "bytes": 270,
+      "sha256": "8bc30d4c9ef7a295ff1469d4483b76b312123fba419db289b207372bef3cdb12"
+    },
+    {
+      "path": "scripts/run_source_pilot.py",
+      "bytes": 14516,
+      "sha256": "631f11162d5f62bfb29bfd4311ac337152eefb28f2f58f2f730ced265b19eda5"
+    },
+    {
+      "path": "scripts/run_source_pilot_context_batches.py",
+      "bytes": 4650,
+      "sha256": "a462567255bf43fa5d8000d923f8a42235d71b15650db175443dd6799b5d2dba"
+    },
+    {
+      "path": "scripts/run_source_pilot_resilient.py",
+      "bytes": 2372,
+      "sha256": "44d7fe047fbb4c955271a1bd99eeaa5bf1b62b07bf4ea04e00caf712878f98d1"
+    },
+    {
+      "path": "scripts/verify_installation.py",
+      "bytes": 3035,
+      "sha256": "95dc5e28b351f695f2ab6f92e2d5b998c91afe5804486732693d0fb2444186fa"
+    },
+    {
+      "path": "tests/__init__.py",
+      "bytes": 67,
+      "sha256": "f6d6f9c777a84e1ca4a4bf73efcdabe39214af66df418abe857538b8da6817db"
+    },
+    {
+      "path": "tests/fixtures/native_checker_contracts.json",
+      "bytes": 1917,
+      "sha256": "78f2c5335cbab4a4f87a76e4656209a3aae17a2925a1b6a33e4f3587cdb376b1"
+    },
+    {
+      "path": "tests/test_benchmark_fetch.py",
+      "bytes": 2362,
+      "sha256": "cc0867db23c80440c9b30afd7c65cfc9e11f1bef47fc6d94d1613e9abfced887"
+    },
+    {
+      "path": "tests/test_minimal_unassisted.py",
+      "bytes": 4486,
+      "sha256": "054d4ced42a3fa7be5adb8cd68ad37d4f8896f32f137587099f751867c949e38"
+    },
+    {
+      "path": "tests/test_native_candidate_parser.py",
+      "bytes": 3000,
+      "sha256": "3dfbacb3648d33d1b30d90c5db4bc5691cde5c29fe020ae83b9f2cf007e39e09"
+    },
+    {
+      "path": "tests/test_native_source_workbench.py",
+      "bytes": 9426,
+      "sha256": "daa96b481ee1a3075192f0a538c56a4f7e246939ce3933c7dba45a063d7f5715"
+    },
+    {
+      "path": "tests/test_resilient_checkpoint_io.py",
+      "bytes": 2511,
+      "sha256": "f7514a0c5e609f3ed3dd6962bb3b988a2afab8267b56124ba620614335fd9a27"
+    },
+    {
+      "path": "tests/test_response_validation.py",
+      "bytes": 2564,
+      "sha256": "57109e2cf6b9c6b0272869b11a2cfa318b7af2ac91585e7aa0bfacd1d03af732"
+    },
+    {
+      "path": "tests/test_source_pilot_metrics.py",
+      "bytes": 2595,
+      "sha256": "04bf66b9f95547c259fb1992df187decbb5810815645376434f5d04c7b06519f"
+    },
+    {
+      "path": "tests/test_textbook_examples.py",
+      "bytes": 9327,
+      "sha256": "9c0738fb2e357d7adcaaa5bde05f549b3d2c42492495f38aecef02cf860c6978"
+    }
+  ],
+  "scope": "Source-only research release. Historical raw data, models and external benchmark bytes are excluded."
+} .env.example                                       |    3 [32m+[m
+ .gitignore                                         |   21 [32m+[m
+ CITATION.cff                                       |    8 [32m+[m
+ MANIFEST.json                                      |  530 [32m+++[m
+ README.md                                          |  127 [32m+[m
+ app.py                                             |  538 [32m+++[m
+ backend/__init__.py                                |    1 [32m+[m
+ backend/application/__init__.py                    |    1 [32m+[m
+ backend/application/assessment.py                  |   25 [32m+[m
+ backend/application/benchmark_guidance.py          |    6 [32m+[m
+ backend/application/hypothesis_generation.py       |   53 [32m+[m
+ backend/application/hypothesis_verification.py     |   35 [32m+[m
+ backend/application/invariant_service.py           |  225 [32m++[m
+ backend/application/ports.py                       |   43 [32m+[m
+ backend/application/research_metrics.py            |   68 [32m+[m
+ backend/application/response_validation.py         |   11 [32m+[m
+ backend/application/run_audit.py                   |   48 [32m+[m
+ backend/application/source_benchmark_service.py    |  138 [32m+[m
+ backend/application/source_experiment_plan.py      |   43 [32m+[m
+ backend/application/source_pilot_metrics.py        |   75 [32m+[m
+ backend/application/textbook_service.py            |  103 [32m+[m
+ backend/domain/__init__.py                         |    1 [32m+[m
+ backend/domain/benchmarks.py                       |  217 [32m+[m
+ backend/domain/candidate_contract.py               |   11 [32m+[m
+ backend/domain/models.py                           |  145 [32m+[m
+ backend/domain/source_traces.py                    |   26 [32m+[m
+ backend/domain/textbook_contract.py                |  100 [32m+[m
+ backend/domain/verification_policy.py              |   38 [32m+[m
+ backend/infrastructure/__init__.py                 |    1 [32m+[m
+ backend/infrastructure/array_z3_checker.py         |  421 [32m++[m
+ backend/infrastructure/benchmark_z3_checker.py     |   38 [32m+[m
+ backend/infrastructure/c_source_inventory.py       |  116 [32m+[m
+ backend/infrastructure/candidate_parser.py         |  137 [32m+[m
+ backend/infrastructure/cbmc_checker.py             |  164 [32m+[m
+ backend/infrastructure/code2inv_source_checker.py  |  149 [32m+[m
+ backend/infrastructure/code2inv_trace_sampler.py   |  124 [32m+[m
+ backend/infrastructure/experiment_repository.py    |   32 [32m+[m
+ backend/infrastructure/integer_power_theory.py     |  121 [32m+[m
+ backend/infrastructure/local_model_adapter.py      |  165 [32m+[m
+ backend/infrastructure/loop_parser.py              |  176 [32m+[m
+ backend/infrastructure/model_adapter.py            |  110 [32m+[m
+ .../infrastructure/native_trace_instrumentation.py |  182 [32m+[m
+ backend/infrastructure/native_trace_runtime.c      |  140 [32m+[m
+ backend/infrastructure/native_trace_sampler.py     |  136 [32m+[m
+ backend/infrastructure/pattern_hypothesizer.py     |  121 [32m+[m
+ backend/infrastructure/process_tree.py             |   67 [32m+[m
+ backend/infrastructure/prompt_builder.py           |  262 [32m++[m
+ backend/infrastructure/prompt_sections.py          |   59 [32m+[m
+ backend/infrastructure/research_benchmarks.py      |   42 [32m+[m
+ backend/infrastructure/research_records.py         |   24 [32m+[m
+ backend/infrastructure/reverse_constructor.py      |  152 [32m+[m
+ backend/infrastructure/scan_loop_inference.py      |   38 [32m+[m
+ .../infrastructure/source_benchmark_repository.py  |   49 [32m+[m
+ backend/infrastructure/source_trace_sampler.py     |   41 [32m+[m
+ backend/infrastructure/svcomp_contracts.py         |  159 [32m+[m
+ backend/infrastructure/textbook_input_scaling.py   |   27 [32m+[m
+ backend/infrastructure/textbook_prompt_builder.py  |   33 [32m+[m
+ backend/infrastructure/textbook_runtime.py         |  170 [32m+[m
+ backend/infrastructure/trace_executor.py           |  154 [32m+[m
+ backend/infrastructure/z3_checker.py               |  378 [32m++[m
+ benchmarks/source_manifest.json                    | 4226 [32m++++++++++++++++++++[m
+ bootstrap.py                                       |   48 [32m+[m
+ deploy/portable/Caddyfile                          |    8 [32m+[m
+ deploy/portable/Dockerfile                         |   43 [32m+[m
+ deploy/portable/Dockerfile.dockerignore            |   29 [32m+[m
+ deploy/portable/compose.gpu.yaml                   |   10 [32m+[m
+ deploy/portable/compose.models.yaml                |   10 [32m+[m
+ deploy/portable/compose.setup.yaml                 |    4 [32m+[m
+ deploy/portable/compose.yaml                       |   80 [32m+[m
+ deploy/portable/smoke_check.py                     |   77 [32m+[m
+ docs/EXPERIMENTS.md                                |  107 [32m+[m
+ docs/PROVENANCE.md                                 |   56 [32m+[m
+ docs/model_artifacts.json                          |   98 [32m+[m
+ docs/study_protocol.json                           |   84 [32m+[m
+ examples/countdown.py                              |    6 [32m+[m
+ examples/even_counter.py                           |    6 [32m+[m
+ examples/sum_to_n.py                               |    6 [32m+[m
+ presentation/__init__.py                           |    1 [32m+[m
+ presentation/archive_browser.py                    |   67 [32m+[m
+ presentation/assessment_labels.py                  |   34 [32m+[m
+ presentation/configuration.py                      |   10 [32m+[m
+ presentation/hypotheses.py                         |  256 [32m++[m
+ presentation/research_dashboard.py                 |  497 [32m+++[m
+ presentation/source_benchmarks.py                  |  179 [32m+[m
+ requirements.txt                                   |    7 [32m+[m
+ scripts/__init__.py                                |    1 [32m+[m
+ scripts/compare_source_trace_audits.py             |   56 [32m+[m
+ scripts/fetch_benchmarks.py                        |  107 [32m+[m
+ scripts/report_source_pilot.py                     |  143 [32m+[m
+ scripts/resilient_checkpoint_io.py                 |   34 [32m+[m
+ scripts/run_research_experiment.py                 |  602 [32m+++[m
+ scripts/run_scaling_experiment.py                  |   14 [32m+[m
+ scripts/run_source_pilot.py                        |  264 [32m++[m
+ scripts/run_source_pilot_context_batches.py        |   96 [32m+[m
+ scripts/run_source_pilot_resilient.py              |   56 [32m+[m
+ scripts/verify_installation.py                     |   61 [32m+[m
+ tests/__init__.py                                  |    1 [32m+[m
+ tests/fixtures/native_checker_contracts.json       |   27 [32m+[m
+ tests/test_benchmark_fetch.py                      |   52 [32m+[m
+ tests/test_minimal_unassisted.py                   |   73 [32m+[m
+ tests/test_native_candidate_parser.py              |   56 [32m+[m
+ tests/test_native_source_workbench.py              |  156 [32m+[m
+ tests/test_resilient_checkpoint_io.py              |   57 [32m+[m
+ tests/test_response_validation.py                  |   52 [32m+[m
+ tests/test_source_pilot_metrics.py                 |   49 [32m+[m
+ tests/test_textbook_examples.py                    |  160 [32m+[m
+ 106 files changed, 14694 insertions(+)

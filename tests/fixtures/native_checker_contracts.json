@@ -1,0 +1,27 @@
+{
+  "svcomp-loop-invariants-eq1": {"0": "w == x && y == z"},
+  "svcomp-loop-invariants-mod4": {"0": "x % 4 == 0"},
+  "svcomp-loop-invariants-linear-inequality-inv-a": {"0": "i <= n && s <= 255*i && s >= v"},
+  "svcomp-loop-lit-bhmr2007": {"0": "0 <= n && n <= 1000000 && 0 <= i && i <= n && 0 <= a && a <= 2*i && 0 <= b && b <= 2*i && a+b == 3*i"},
+  "svcomp-loop-lit-cggmp2005": {"0": "1 <= i && i <= 9 && 6 <= j && j <= 10 && 2*j+i == 21"},
+  "svcomp-loop-lit-css2003": {"0": "1 <= i && i <= 1000000 && 1 <= i+k && i+k <= 2"},
+  "svcomp-loop-lit-gr2006": {"0": "0 <= x && x <= 100 && ((x <= 50 && y == x) || (50 < x && y == 100-x))"},
+  "svcomp-loop-new-gauss_sum": {"0": "1 <= n && n <= 1000 && 1 <= i && i <= n+1 && 0 <= sum && sum <= 500500 && 2*sum == (i-1)*i"},
+  "svcomp-loop-new-nested-1": {
+    "0": "10 <= n && n <= 10000 && 10 <= m && m <= 10000 && 0 <= i && i <= n && 10*i <= k && k <= 10000*i",
+    "1": "10 <= n && n <= 10000 && 10 <= m && m <= 10000 && 0 <= i && i < n && 0 <= j && j <= m && 10*i+j <= k && k <= 10000*i+j"
+  },
+  "svcomp-loops-array-2": {"0": "SIZE == 1 && j <= SIZE"},
+  "svcomp-array-examples-standard_copy1_ground-1": {
+    "0": "0 <= a && a <= 100000",
+    "1": "0 <= i && i <= 100000 && forall(k, !(0 <= k && k < i) || a1[k] == a2[k])",
+    "2": "0 <= x && x <= 100000 && forall(k, !(0 <= k && k < 100000) || a1[k] == a2[k])"
+  },
+  "svcomp-array-examples-sorting_bubblesort_ground-1": {
+    "0": "0 <= j && j <= 100000",
+    "1": "swapped || forall(k, forall(l, !(0 <= k && k < l && l < 100000) || a[k] <= a[l]))",
+    "2": "1 <= i && i <= 100000 && (swapped || forall(k, forall(l, !(0 <= k && k < l && l < i) || a[k] <= a[l])))",
+    "3": "0 <= x && x <= 100000 && forall(k, forall(l, !(0 <= k && k < l && l < 100000) || a[k] <= a[l]))",
+    "4": "0 <= x && x < 100000 && x+1 <= y && y <= 100000 && forall(k, forall(l, !(0 <= k && k < l && l < 100000) || a[k] <= a[l]))"
+  }
+}

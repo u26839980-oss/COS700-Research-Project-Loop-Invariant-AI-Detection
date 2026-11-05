@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite this software and the accompanying research report when using LoOpS."
+title: "LoOpS: Local Loop Invariant Hypothesis Generation"
+type: software
+authors:
+  - family-names: Tsiane
+    given-names: Kagiso
+abstract: "A local research workbench for loop-invariant generation from source code and execution traces, with source-specific formal checking."

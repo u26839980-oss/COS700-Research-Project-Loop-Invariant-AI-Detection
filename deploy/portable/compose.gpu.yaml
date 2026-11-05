@@ -1,0 +1,10 @@
+# Optional NVIDIA acceleration; requires host GPU drivers/container support.
+services:
+  ollama:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

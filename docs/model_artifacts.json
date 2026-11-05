@@ -1,0 +1,98 @@
+{
+  "scope": "Recorded local artifacts from the historical source pilot; tags alone do not establish identity.",
+  "runtime_version": "0.40.8",
+  "models": [
+    {
+      "name": "gemma4:31b-it-q4_K_M",
+      "digest": "17ba34c06c801ba22f6047bab21ced9429c6d43e0e42ecf339b0f3e5a61e8d97",
+      "size": 20385458234,
+      "details": {
+        "parent_model": "dhiltgen/gemma4:31b-it-mtp-q4_K_M-llamacpp",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "30.7B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 262144,
+        "embedding_length": 5376,
+        "runner": "llamacpp"
+      }
+    },
+    {
+      "name": "qwen2.5-coder:3b-instruct",
+      "digest": "f72c60cabf6237b07f6e632b2c48d533cef25eda2efbd34bed21c5e9c01e6225",
+      "size": 1929912626,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "3.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 32768,
+        "embedding_length": 2048,
+        "runner": "ggml"
+      }
+    },
+    {
+      "name": "codellama:7b-code",
+      "digest": "8df0a30bb1e64c5796626dd2b67b538645a3e94f53eba44be125466cd19a38af",
+      "size": 3825910537,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": null,
+        "parameter_size": "7B",
+        "quantization_level": "Q4_0",
+        "context_length": 16384,
+        "embedding_length": 4096,
+        "runner": "ggml"
+      }
+    },
+    {
+      "name": "deepseek-coder:1.3b",
+      "digest": "3ddd2d3fc8d2b5fe039d18f859271132fd9c7960ef0be1864984442dc2a915d3",
+      "size": 776080839,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "1B",
+        "quantization_level": "Q4_0",
+        "context_length": 16384,
+        "embedding_length": 2048,
+        "runner": "ggml"
+      }
+    },
+    {
+      "name": "qwen2.5-coder:1.5b",
+      "digest": "d7372fd828518a4d38b1eb196c673c31a85f2ed302b3d1e406c4c2d1b64a0668",
+      "size": 986062089,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "1.5B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 32768,
+        "embedding_length": 1536,
+        "runner": "ggml"
+      }
+    }
+  ],
+  "notes": [
+    "No weights or redistribution rights are included.",
+    "A fresh installation must verify artifact digests and record its own environment."
+  ]
+}

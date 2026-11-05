@@ -1,0 +1,4226 @@
+{
+  "schema_version": 1,
+  "name": "source_verified_v1",
+  "task_count": 42,
+  "source_pins": {
+    "code2inv": {
+      "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+      "repository": "https://github.com/PL-ML/code2inv",
+      "ref": "master"
+    },
+    "sv-benchmarks": {
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "repository": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks",
+      "ref": "svcomp26"
+    }
+  },
+  "model_calls": 0,
+  "selection_policy": {
+    "code2inv": "30 selected from all 133 numbered C instances, seed 1729, round-robin syntactic strata, one per constant-normalized AST family; no solver/model outcomes consulted.",
+    "svcomp": "12 predeclared named tasks covering machine arithmetic, nondeterminism, branching, nonlinear updates, nested loops, arrays and a published negative control.",
+    "caveat": "AST family fingerprints catch some near-duplicates, not semantic equivalence or training contamination. Do not claim 42 independent algorithms."
+  },
+  "provenance_assets": [
+    {
+      "path": "provenance/code2inv/README.md",
+      "upstream_path": "README.md",
+      "repository": "code2inv",
+      "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+      "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/README.md",
+      "sha256": "4086bc0603f56a2d1d38163a6cadb892a5c7a7d32a6617ddbd6a32b1b6a54c3b",
+      "git_blob": "b23c1a45fceb416c03d0c8518c0606f645d33070",
+      "bytes": 9778
+    },
+    {
+      "path": "provenance/code2inv/benchmarks-README.md",
+      "upstream_path": "benchmarks/README.md",
+      "repository": "code2inv",
+      "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+      "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/README.md",
+      "sha256": "298d56a174410535044d37ceab41915cacc176eed0427b1c34e7df3380fb1318",
+      "git_blob": "bc0f5de1d9603df1e6d419a69f5226b88e1978a9",
+      "bytes": 552
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSE.Apache-2.0.txt",
+      "upstream_path": "LICENSE.Apache-2.0.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSE.Apache-2.0.txt",
+      "sha256": "963dcc022dd2394e5455c501f1e488688af97532b39c7d04edcaf3413a4243c3",
+      "git_blob": "5431dc12a1a08538a658cbc512941cea40b758b4",
+      "bytes": 23
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSE.GPLv2.txt",
+      "upstream_path": "LICENSE.GPLv2.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSE.GPLv2.txt",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "git_blob": "d159169d1050894d3ea3b98e1c965c4058208fe1",
+      "bytes": 18092
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSE.GPLv3.txt",
+      "upstream_path": "LICENSE.GPLv3.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSE.GPLv3.txt",
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+      "git_blob": "65c5ca88a67c30becee01c5a8816d964b03862f9",
+      "bytes": 7651
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/Apache-2.0.txt",
+      "upstream_path": "LICENSES/Apache-2.0.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "git_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "bytes": 11358
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/BSD-2-Clause.txt",
+      "upstream_path": "LICENSES/BSD-2-Clause.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/BSD-2-Clause.txt",
+      "sha256": "99c8a54dfcd797f0a77fd07d55cddc10600c30215f90790f212dd0d7746da456",
+      "git_blob": "db02d53e2b25df4714d8f90723137aacb1ebdb08",
+      "bytes": 1288
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/BSD-3-Clause.txt",
+      "upstream_path": "LICENSES/BSD-3-Clause.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/BSD-3-Clause.txt",
+      "sha256": "5a93d5831e1297ab10fe643e1a631e83be392896da14ee2951285a79012df69d",
+      "git_blob": "ea890afbc70c94011b765722a95e2c8c7d4f1233",
+      "bytes": 1460
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/CC0-1.0.txt",
+      "upstream_path": "LICENSES/CC0-1.0.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/CC0-1.0.txt",
+      "sha256": "6a573fb2f9082662978cf21fb153096df0a1981deaea7dbc10a11046fe005d9f",
+      "git_blob": "a343ccd4335f66ace3f9a83dfff02212a84ef4f2",
+      "bytes": 6916
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/GPL-2.0-or-later.txt",
+      "upstream_path": "LICENSES/GPL-2.0-or-later.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/GPL-2.0-or-later.txt",
+      "sha256": "aaf135472f81c5b4a0dca9367e5bb5e9750032b5bebe5442b36e4c0a47430df3",
+      "git_blob": "17cb286430a4d8094e473d06bd7f50f40438ddba",
+      "bytes": 17337
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/GPL-3.0-or-later.txt",
+      "upstream_path": "LICENSES/GPL-3.0-or-later.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/GPL-3.0-or-later.txt",
+      "sha256": "99fd28b5509ce64a25c734ed821a9d85f269ed8e707612aa18ae04b56ebb7500",
+      "git_blob": "46d87d98599a8a344ae4b10a409451c3c159f16e",
+      "bytes": 35104
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/LicenseRef-BSD-3-Clause-Attribution-CMU-LMU.txt",
+      "upstream_path": "LICENSES/LicenseRef-BSD-3-Clause-Attribution-CMU-LMU.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/LicenseRef-BSD-3-Clause-Attribution-CMU-LMU.txt",
+      "sha256": "5dae14a3e2921b58564ef5814a1e7b284533bddc69f1c614d0bf8720db88fce0",
+      "git_blob": "e2f1358c3cdba95ac9e886e54209d3560a6596e6",
+      "bytes": 2499
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/LicenseRef-BSD-3-Clause-Attribution-CMU.txt",
+      "upstream_path": "LICENSES/LicenseRef-BSD-3-Clause-Attribution-CMU.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/LicenseRef-BSD-3-Clause-Attribution-CMU.txt",
+      "sha256": "12bb8c989ecfce275e65642f27c91e64df42862d9d53d4cace95b515c3ae56d9",
+      "git_blob": "62b57ded5ad901e00f6991e5c5bf9536451a268b",
+      "bytes": 2287
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/LicenseRef-BSD-3-Clause-Attribution-Vandikas.txt",
+      "upstream_path": "LICENSES/LicenseRef-BSD-3-Clause-Attribution-Vandikas.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/LicenseRef-BSD-3-Clause-Attribution-Vandikas.txt",
+      "sha256": "026e397c67710c59b5cae28d0bc15cb4379663ca9f932792ad7c7d12df076ff7",
+      "git_blob": "7df7d34e42bfe2ee571024bf42f4e54bda047415",
+      "bytes": 1522
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/LicenseRef-BSD-4-Clause-Attribution-Kroening-Clarke.txt",
+      "upstream_path": "LICENSES/LicenseRef-BSD-4-Clause-Attribution-Kroening-Clarke.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/LicenseRef-BSD-4-Clause-Attribution-Kroening-Clarke.txt",
+      "sha256": "858c0e744b9bab750f6b2801c6921db8c64076d90201977d6219666a75eba0f9",
+      "git_blob": "50673cf86e58f1c106d0c49f370231d1f7b66483",
+      "bytes": 1960
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/LicenseRef-RWTH-Aachen.txt",
+      "upstream_path": "LICENSES/LicenseRef-RWTH-Aachen.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/LicenseRef-RWTH-Aachen.txt",
+      "sha256": "d0d22559395ea8c09501d7c28b57e88f940166f436a379fbd19a7128e1c3a378",
+      "git_blob": "fa2c7e208dd6e0d993338afd4493ec5c1fd34d09",
+      "bytes": 1308
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/LicenseRef-in-text-file.txt",
+      "upstream_path": "LICENSES/LicenseRef-in-text-file.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/LicenseRef-in-text-file.txt",
+      "sha256": "23154599c663c69296178c2e5188733137b11fb2b19a456e591abdab19c8a64a",
+      "git_blob": "647707ab9ce4f78a3bc78c73d9a6a75d52d2628b",
+      "bytes": 95
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/LicenseRef-unknown.txt",
+      "upstream_path": "LICENSES/LicenseRef-unknown.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/LicenseRef-unknown.txt",
+      "sha256": "63c0e5a84cc0fc8e60f60c454449f1d97d9da385cce15c8b3b587f4af6e504ab",
+      "git_blob": "1639dc9cf2a6cadcb0cf0caf07110c0d04aebfe8",
+      "bytes": 197
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/MIT.txt",
+      "upstream_path": "LICENSES/MIT.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/MIT.txt",
+      "sha256": "28029cf681ff177b2ae693dd1df947d0f69dbd150123e90ec80aae9ea2d23295",
+      "git_blob": "00217dc586444b5f6bf17eca9a56e516ffe1213f",
+      "bytes": 1059
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/OpenSSL.txt",
+      "upstream_path": "LICENSES/OpenSSL.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/OpenSSL.txt",
+      "sha256": "7f94b61822b9523475f8c091f264bfedabda24fe175a2a30981ee0e2bc198a04",
+      "git_blob": "75dee7cc289685008619b008f58f3d0132ded5a1",
+      "bytes": 5308
+    },
+    {
+      "path": "provenance/sv-benchmarks/LICENSES/PostgreSQL.txt",
+      "upstream_path": "LICENSES/PostgreSQL.txt",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/LICENSES/PostgreSQL.txt",
+      "sha256": "26d529431b2901983acb8861ce0302b0c6ef007405107b08591aa369f6dcc09e",
+      "git_blob": "06ef3c5d292f53739b825e07b758b5722e0984da",
+      "bytes": 1195
+    },
+    {
+      "path": "provenance/sv-benchmarks/README.md",
+      "upstream_path": "README.md",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/README.md",
+      "sha256": "e901604cc9bb84bf1ed2f4aa460a20e9143c0f18e0507528d4446e052fad45ca",
+      "git_blob": "236aa72d47c4cdcd2c4d8f712969719aa681d2be",
+      "bytes": 10512
+    },
+    {
+      "path": "properties/no-overflow.prp",
+      "upstream_path": "c/properties/no-overflow.prp",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/no-overflow.prp",
+      "sha256": "e82f5222c466476cc45565fc39e73119d8512de62584390eb0c3051f3d4ee602",
+      "git_blob": "26c5bded7af2f0ef083f6b79149516c915de7b7f",
+      "bytes": 42
+    },
+    {
+      "path": "properties/termination.prp",
+      "upstream_path": "c/properties/termination.prp",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/termination.prp",
+      "sha256": "1e9ed9441e9f7768516957a8b76e53c94ea717b44e652edefc6cf4b53e5931f9",
+      "git_blob": "cc40b9a2c9d02dfa0aadca756af48537e94afaff",
+      "bytes": 35
+    },
+    {
+      "path": "properties/unreach-call.prp",
+      "upstream_path": "c/properties/unreach-call.prp",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/unreach-call.prp",
+      "sha256": "0c6a90cfc3ad4545225a0537ddc37b8a11ea5a37b906c053bb298b748f810150",
+      "git_blob": "7ae12e84e7ce974f842dd8fd7f6f72dfb3fb341d",
+      "bytes": 53
+    },
+    {
+      "path": "properties/coverage-branches.prp",
+      "upstream_path": "c/properties/coverage-branches.prp",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-branches.prp",
+      "sha256": "1a5dabd5c80116887833695a6bc7551a1b5e1e42f4e2888144bcf1cff85b9045",
+      "git_blob": "1523f2a2f68001edfb5ac24bcbc175fcd874ed30",
+      "bytes": 56
+    },
+    {
+      "path": "properties/coverage-conditions.prp",
+      "upstream_path": "c/properties/coverage-conditions.prp",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-conditions.prp",
+      "sha256": "b63df4ed4241863f8f66a4718e28de35bd1fa167b685621cf0240fe7880851aa",
+      "git_blob": "1e243ea3a9042c4e56e5bd84b1def7ab144cd579",
+      "bytes": 57
+    },
+    {
+      "path": "properties/coverage-statements.prp",
+      "upstream_path": "c/properties/coverage-statements.prp",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-statements.prp",
+      "sha256": "76b6fc272c83c3067e7316cecaecf36a9608925debeec4e5a280426af6ab625e",
+      "git_blob": "5fec1da6edeb3f7a70639bb4168aaf2f6073f9e5",
+      "bytes": 59
+    },
+    {
+      "path": "properties/coverage-error-call.prp",
+      "upstream_path": "c/properties/coverage-error-call.prp",
+      "repository": "sv-benchmarks",
+      "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+      "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-error-call.prp",
+      "sha256": "647cea8183c78b1d4f20d21ca6fab65f440610a781f42d1f8ada15fce3f2f481",
+      "git_blob": "496ed998fafdc4a6f5e4b927eeb2d196bdc75142",
+      "bytes": 61
+    }
+  ],
+  "tasks": [
+    {
+      "id": "code2inv-030",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-030/30.c",
+      "verification_conditions": "code2inv-030/30.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-030/30.c",
+          "upstream_path": "benchmarks/C_instances/c/30.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/30.c",
+          "sha256": "657c73c69fa971f5a9bf712cd46bfdf6a301d4d6e682f7fd38d2697f6b317758",
+          "git_blob": "43f5b3c65fe4b83e7dba984ace212adf8186590b",
+          "bytes": 196
+        },
+        {
+          "path": "code2inv-030/30.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/30.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/30.c.smt",
+          "sha256": "fb0990a526d424f16f5417ceb6abec1c7f859ac93e765220da15e57566db9cec",
+          "git_blob": "a94305cbb1026627fe22f16aa9b3112eaa122087",
+          "bytes": 1168
+        }
+      ],
+      "inventory": {
+        "features": [],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 0,
+        "scalar_declarations": 1,
+        "operators": {
+          ">": 1,
+          "-": 1,
+          "==": 1
+        },
+        "calls": {
+          "assert": 1
+        },
+        "types": {
+          "int": 1
+        },
+        "alpha_fingerprint": "e5460de3a7ad50acb61f4e014810b7e76f76a1711e47c2ad2f2a4fa96f2fadef",
+        "constant_normalized_family": "4616efdbdffeb8ea19c324672372f3bfe007629b07691a9504180c07b8b285b0",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        0,
+        1
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-024",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-024/24.c",
+      "verification_conditions": "code2inv-024/24.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-024/24.c",
+          "upstream_path": "benchmarks/C_instances/c/24.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/24.c",
+          "sha256": "378711bc2a3892ee81f5bc6f10718801e8b5c04a677135abf3bec7ea439915c8",
+          "git_blob": "95456f9cd446ac2e7edb765303c93072928d4440",
+          "bytes": 236
+        },
+        {
+          "path": "code2inv-024/24.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/24.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/24.c.smt",
+          "sha256": "860e38ae3217e5523935d72b1a2f65825a22e851aa91d01035666c495039ad24",
+          "git_blob": "d3b1f6cf7ade8005bd162a67ed4044968db56d26",
+          "bytes": 1715
+        }
+      ],
+      "inventory": {
+        "features": [],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 0,
+        "scalar_declarations": 2,
+        "operators": {
+          ">=": 1,
+          "+": 1,
+          "-": 1,
+          "==": 1
+        },
+        "calls": {
+          "assert": 1
+        },
+        "types": {
+          "int": 2
+        },
+        "alpha_fingerprint": "12e0681222ab6cbaec01eab00eb356ee17f130ca93bb95e587f4aa5e15f0f873",
+        "constant_normalized_family": "70dce77696497225f04b71592f5a6fd5c742a4f6e6dd9aa4c47cf4bd16339897",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        0,
+        2
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-100",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-100/100.c",
+      "verification_conditions": "code2inv-100/100.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-100/100.c",
+          "upstream_path": "benchmarks/C_instances/c/100.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/100.c",
+          "sha256": "f4a35ff7cc8136d496924c621a53c92470353d1c63b159b58769377122958087",
+          "git_blob": "13764e0bce5b3949c214a07cd6dd48b16962a27e",
+          "bytes": 263
+        },
+        {
+          "path": "code2inv-100/100.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/100.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/100.c.smt",
+          "sha256": "70dd008205a1f6280bad891905627ec5fcce4166ace6b75bfc4818f18b8737bf",
+          "git_blob": "aee7aee8f758580c8bdce759c04f13f1bc7e9154",
+          "bytes": 1997
+        }
+      ],
+      "inventory": {
+        "features": [],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 0,
+        "scalar_declarations": 3,
+        "operators": {
+          ">=": 1,
+          ">": 1,
+          "+": 1,
+          "-": 1,
+          "==": 1
+        },
+        "calls": {
+          "assume": 1,
+          "assert": 1
+        },
+        "types": {
+          "int": 3
+        },
+        "alpha_fingerprint": "136ebb9fe4dc837d4fbaa41b42f715570ff4267e163bc3784e98f43b66613560",
+        "constant_normalized_family": "91540ef6acfa906a980e60db97fb909af84266e3fefa40c350fb8a244d59d151",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        0,
+        3
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-092",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-092/92.c",
+      "verification_conditions": "code2inv-092/92.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-092/92.c",
+          "upstream_path": "benchmarks/C_instances/c/92.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/92.c",
+          "sha256": "70e66e30cafb0034d5fa299fddad293c49b66ebbbb7938df6dda01451dbf4e03",
+          "git_blob": "57740925399574cd267865c9d1fe97f87269ae31",
+          "bytes": 131
+        },
+        {
+          "path": "code2inv-092/92.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/92.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/92.c.smt",
+          "sha256": "44671bfbe767a0878cd17790055048bf0afaa57dfb930e629de5a855d2ee8c85",
+          "git_blob": "3aef0d93fb4e6dd5bcf2671065d146c711d9cfd5",
+          "bytes": 1385
+        }
+      ],
+      "inventory": {
+        "features": [],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 0,
+        "scalar_declarations": 5,
+        "operators": {
+          ">=": 2,
+          "+": 1
+        },
+        "calls": {
+          "assert": 1
+        },
+        "types": {
+          "int": 5
+        },
+        "alpha_fingerprint": "d8736a7a3b40858ed0236d360622af17ed6cf08860276e17edf8cc51c992ef7c",
+        "constant_normalized_family": "6381d15c7a0d168adec64805681989983eaf7238a874d20c65955961e89a479d",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        0,
+        4
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-027",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-027/27.c",
+      "verification_conditions": "code2inv-027/27.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-027/27.c",
+          "upstream_path": "benchmarks/C_instances/c/27.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/27.c",
+          "sha256": "499fafd0d97a20f9eacd402b40da4c9ec742b1966749814861124d996388ab42",
+          "git_blob": "dd259df9585a759a9c6a035d29e7734fa5f5b4a0",
+          "bytes": 220
+        },
+        {
+          "path": "code2inv-027/27.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/27.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/27.c.smt",
+          "sha256": "d463e1ea5e66295e165134de36a1b7978784c8b18c73907d1bce008b7c9e93f5",
+          "git_blob": "4849e7e0c4a54a2d50fdf92d70a890fda68300d3",
+          "bytes": 1456
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 2,
+        "operators": {
+          ">": 1,
+          "-": 1,
+          ">=": 1,
+          "==": 1
+        },
+        "calls": {
+          "assert": 1
+        },
+        "types": {
+          "int": 2
+        },
+        "alpha_fingerprint": "a19038420c5fb5e9e4fa3df36f13858521125d008c235bd16a8d1ec67a7a75ab",
+        "constant_normalized_family": "df04734fd4053428ef1380e098c0d9177924501d2d261d4e87308052ed285418",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        1,
+        2
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-004",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-004/4.c",
+      "verification_conditions": "code2inv-004/4.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-004/4.c",
+          "upstream_path": "benchmarks/C_instances/c/4.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/4.c",
+          "sha256": "e6d0d5da1a8ed58513dfbf0c2763ac848e80d0278e52baeeb1231ccb8ae27f0f",
+          "git_blob": "c7cc2a43442cc1dc9658d75a5af17c7167b88c22",
+          "bytes": 156
+        },
+        {
+          "path": "code2inv-004/4.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/4.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/4.c.smt",
+          "sha256": "c5cbd3a6a18017fe2eefef277554366d730ffda4f7f94f016566a013aa7a0cc9",
+          "git_blob": "f647d390e8eaacc9d3f699df35915497b73bd260",
+          "bytes": 2088
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 3,
+        "operators": {
+          "<": 1,
+          "<=": 1,
+          ">=": 1
+        },
+        "calls": {
+          "assert": 1
+        },
+        "types": {
+          "int": 3
+        },
+        "alpha_fingerprint": "fd276543c5dd9c08e93863ce4f750efe83dc87848e563d6661a1c6aec837e05a",
+        "constant_normalized_family": "6210a246f6a8782b89215d39657418e252538a83476ada5910e665be0f81b3f2",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        1,
+        3
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-097",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-097/97.c",
+      "verification_conditions": "code2inv-097/97.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-097/97.c",
+          "upstream_path": "benchmarks/C_instances/c/97.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/97.c",
+          "sha256": "43a42403d93b8fc61e3e9e6b0fb08db4ce6857a04f8f023a68d0733fd88fc40a",
+          "git_blob": "ed153021b976cd42e15753667b56da5c27c52cb4",
+          "bytes": 281
+        },
+        {
+          "path": "code2inv-097/97.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/97.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/97.c.smt",
+          "sha256": "eb72ba4a46f0d93a17088f480cd28f3d1a3dc4a717af9a2a9878480b11cdd869",
+          "git_blob": "5a8134cde7107847543573c0445b60412d6e054d",
+          "bytes": 2349
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 4,
+        "operators": {
+          "<=": 1,
+          "+": 2,
+          "==": 2
+        },
+        "calls": {
+          "assert": 1
+        },
+        "types": {
+          "int": 4
+        },
+        "alpha_fingerprint": "a2c2328f8c21d8ccb61f7c5026b51cbda3993bb16b7214e4870b0e90f1bc0b3e",
+        "constant_normalized_family": "bc4956e30aa05117b824f82a6a6190fd3788f222310b4e03e8b226c5f10eb6fa",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        1,
+        4
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-005",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-005/5.c",
+      "verification_conditions": "code2inv-005/5.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-005/5.c",
+          "upstream_path": "benchmarks/C_instances/c/5.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/5.c",
+          "sha256": "ff7894656753889558fea7c4888263bcb6cd5fcf9389bc5ece639846ea6770dd",
+          "git_blob": "16696e1c3f458b8fe867f7f5af0e896d113a4e56",
+          "bytes": 199
+        },
+        {
+          "path": "code2inv-005/5.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/5.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/5.c.smt",
+          "sha256": "ff6bd5bc1ae25b6b18fcdae1e4b802ea1db445c735ec24066f786b8711061747",
+          "git_blob": "d977edf17a1438f369f69dfab7a80b19bfd5a00b",
+          "bytes": 2513
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 2,
+        "scalar_declarations": 4,
+        "operators": {
+          "<": 1,
+          "<=": 1,
+          ">": 1,
+          ">=": 1
+        },
+        "calls": {
+          "assert": 1
+        },
+        "types": {
+          "int": 4
+        },
+        "alpha_fingerprint": "b177d9a26fa52d3ff42f254230a029e8bfc4cedc33e9b126194fd35fa7783de9",
+        "constant_normalized_family": "caade992e82fbeb760f21dfe664f5086fd7a80a542893abc933af6ff434325d4",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        2,
+        4
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-115",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-115/115.c",
+      "verification_conditions": "code2inv-115/115.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-115/115.c",
+          "upstream_path": "benchmarks/C_instances/c/115.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/115.c",
+          "sha256": "8987be5d6688bdce1d38f823d336620718c7665595fbe734b1f199f051d04aec",
+          "git_blob": "0abf72a61e1ebfa98eb17777d1240f551cdc4eed",
+          "bytes": 260
+        },
+        {
+          "path": "code2inv-115/115.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/115.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/115.c.smt",
+          "sha256": "e6d3b5a937312c3a2282efab072631637e019799cb747679d9ebbd13f7bfbd32",
+          "git_blob": "ad502990152371c585f7dd1d2bfe61e16ab2d25b",
+          "bytes": 1963
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 2,
+        "operators": {
+          "+": 2,
+          "!=": 1,
+          "==": 1
+        },
+        "calls": {
+          "unknown": 1,
+          "assert": 1
+        },
+        "types": {
+          "int": 2
+        },
+        "alpha_fingerprint": "bee62d1c9b2ceb44b23983322b23bc213aa9f820e91470d3dc1c476c61dd6b7d",
+        "constant_normalized_family": "bdf5a2c541f75092ca4d02ed98b9c72947fa4ec1450d09dd9049d286645ba7d0",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "nondeterministic",
+        1,
+        2
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-087",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-087/87.c",
+      "verification_conditions": "code2inv-087/87.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-087/87.c",
+          "upstream_path": "benchmarks/C_instances/c/87.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/87.c",
+          "sha256": "e18e7ef08f073d9d1f07c0429a2dab497089fc8376097d0f9b845848daaf62cb",
+          "git_blob": "8422805ba3cf7ae6b6cf2ba3a1cff8fcb032126e",
+          "bytes": 404
+        },
+        {
+          "path": "code2inv-087/87.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/87.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/87.c.smt",
+          "sha256": "d868f8f8a31807065498411b7e2f543b1ee3994f5c9e0bc192cfbbd0bfd98092",
+          "git_blob": "f2063891c4a2453d8870aa3b91397a886c13cbc8",
+          "bytes": 3230
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 3,
+        "operators": {
+          "!=": 1,
+          "+": 1,
+          "==": 1
+        },
+        "calls": {
+          "unknown": 1,
+          "assert": 1
+        },
+        "types": {
+          "int": 3
+        },
+        "alpha_fingerprint": "a965267e1eaf7b20ffe3f5799786ff11a74ac9351de17e5ec834792de4b407ae",
+        "constant_normalized_family": "4f36ab6b76af386af43986922d5f76630bf2cd2061795f157988e1852ef10b2d",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "nondeterministic",
+        1,
+        3
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-089",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-089/89.c",
+      "verification_conditions": "code2inv-089/89.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-089/89.c",
+          "upstream_path": "benchmarks/C_instances/c/89.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/89.c",
+          "sha256": "29673581850e4313d68912e6a89c7481ea778d7642b878ec2a89ff62df337ed1",
+          "git_blob": "18cf1684e93eb8f752a137a32cb3617125e25a76",
+          "bytes": 434
+        },
+        {
+          "path": "code2inv-089/89.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/89.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/89.c.smt",
+          "sha256": "d868f8f8a31807065498411b7e2f543b1ee3994f5c9e0bc192cfbbd0bfd98092",
+          "git_blob": "f2063891c4a2453d8870aa3b91397a886c13cbc8",
+          "bytes": 3230
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 6,
+        "operators": {
+          "!=": 1,
+          "+": 1,
+          "==": 1
+        },
+        "calls": {
+          "unknown": 1,
+          "assert": 1
+        },
+        "types": {
+          "int": 6
+        },
+        "alpha_fingerprint": "bd61603317138e392abfb85bc7d1013f4f0e06d0d035aff5c91ef604733a89bd",
+        "constant_normalized_family": "496edf85bcacec6ad7238312a1f32644ae9ee76a111a4b3b6713006557861bb9",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "nondeterministic",
+        1,
+        4
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-050",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-050/50.c",
+      "verification_conditions": "code2inv-050/50.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-050/50.c",
+          "upstream_path": "benchmarks/C_instances/c/50.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/50.c",
+          "sha256": "3458f96a8f5354e6b60dde778fa0200033d20f47d5d3f029d4ce6dd10a3f164e",
+          "git_blob": "a2a96f18ef68c32e981f224dc40ac096c278558d",
+          "bytes": 371
+        },
+        {
+          "path": "code2inv-050/50.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/50.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/50.c.smt",
+          "sha256": "bb72cf3d6e2fc56ca34046a7f2654799986cf217c2a219c69c25de7739aa30bf",
+          "git_blob": "5078d9036031e9de8b4e7f136af6c8533af08015",
+          "bytes": 1840
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 4,
+        "scalar_declarations": 1,
+        "operators": {
+          "!=": 2,
+          "+": 1,
+          "==": 1,
+          ">=": 1
+        },
+        "calls": {
+          "unknown": 2,
+          "assert": 1
+        },
+        "types": {
+          "int": 1
+        },
+        "alpha_fingerprint": "f4ba437418710b8aac9be36eaf0b027819f5bb6dbca49afa5257c77c1d627f97",
+        "constant_normalized_family": "4695f2cc443300a8310406e22e7d797a524c13228b8b6593a053d7d473fee8b0",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "nondeterministic",
+        2,
+        1
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-038",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-038/38.c",
+      "verification_conditions": "code2inv-038/38.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-038/38.c",
+          "upstream_path": "benchmarks/C_instances/c/38.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/38.c",
+          "sha256": "7a472647f3cb8da6a0af289af1384452b61b021ba569ba189928712de425e81c",
+          "git_blob": "465c3e096afe1cda167295fe5576fa13360c988c",
+          "bytes": 267
+        },
+        {
+          "path": "code2inv-038/38.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/38.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/38.c.smt",
+          "sha256": "afa152af9cce7971c049036dcd0075ad27c4d626f4294b768b648321323ec669",
+          "git_blob": "6e2ba5151e74197b6812b002c9cb4ca8e283d887",
+          "bytes": 1873
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 2,
+        "scalar_declarations": 2,
+        "operators": {
+          ">": 1,
+          "==": 2,
+          "+": 1,
+          ">=": 1
+        },
+        "calls": {
+          "assume": 1,
+          "unknown": 1,
+          "assert": 1
+        },
+        "types": {
+          "int": 2
+        },
+        "alpha_fingerprint": "56170229855191fd138a832e440b5ccf70bf76689da4a346713c80f186269331",
+        "constant_normalized_family": "47e94338f565b2061b49282e4d89106a1932334389a53573b319dba9aca58f70",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "nondeterministic",
+        2,
+        2
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-072",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-072/72.c",
+      "verification_conditions": "code2inv-072/72.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-072/72.c",
+          "upstream_path": "benchmarks/C_instances/c/72.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/72.c",
+          "sha256": "5d770fe6478c6a683cf202355b7cc99db4ffd7c1e85542350f844d8445167c71",
+          "git_blob": "e8b3e9478b6fdf578b1fa342990a7dbd34b2e858",
+          "bytes": 332
+        },
+        {
+          "path": "code2inv-072/72.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/72.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/72.c.smt",
+          "sha256": "263a1dc373f54bee9713a18e56036dd13d36f8686b8025a33dc41e0ed6d13819",
+          "git_blob": "a28e6336e7644f5d9ed21d6172bd9a249a0ba9bf",
+          "bytes": 2563
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 2,
+        "scalar_declarations": 3,
+        "operators": {
+          ">=": 2,
+          "*": 1,
+          "<": 3,
+          "+": 2
+        },
+        "calls": {
+          "assume": 2,
+          "unknown": 1,
+          "assert": 1
+        },
+        "types": {
+          "int": 3
+        },
+        "alpha_fingerprint": "59f55441e158902db78c0bac7cdb6549881ccded69e47491f4dec71f29e4d17a",
+        "constant_normalized_family": "a91cf2f3d9755e096c8d8c1d7e0bbcd035c7da99c638537be230b8dca264775b",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "nondeterministic",
+        2,
+        3
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-082",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-082/82.c",
+      "verification_conditions": "code2inv-082/82.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-082/82.c",
+          "upstream_path": "benchmarks/C_instances/c/82.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/82.c",
+          "sha256": "2efd42333896ad82f422bd6f59a9127df2c379e38e5737732079cf9444d6a1c8",
+          "git_blob": "7b0de3eb54ba281c75c6355035bd87fe62884ab8",
+          "bytes": 355
+        },
+        {
+          "path": "code2inv-082/82.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/82.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/82.c.smt",
+          "sha256": "d1092bcd7416fdec26cf1cfb29ac6578268d90c1a6080248b8b29336c89a9104",
+          "git_blob": "816da5f48393db5894145451432a55079ee24a98",
+          "bytes": 2195
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 3,
+        "scalar_declarations": 6,
+        "operators": {
+          ">=": 5,
+          "<": 1,
+          "+": 1,
+          ">": 1
+        },
+        "calls": {
+          "assume": 3,
+          "unknown": 1,
+          "assert": 1
+        },
+        "types": {
+          "int": 6
+        },
+        "alpha_fingerprint": "932dcd6caa4b066496501d1dd82ca6064139ed5df37377817b43ccc025d9c583",
+        "constant_normalized_family": "01f473f9a926b045befeeb1167dd3752d856179404a1c34ecfc61b09d4ef1d30",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "nondeterministic",
+        2,
+        4
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-103",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-103/103.c",
+      "verification_conditions": "code2inv-103/103.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-103/103.c",
+          "upstream_path": "benchmarks/C_instances/c/103.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/103.c",
+          "sha256": "16b6625fac3d5d8a459a0f493d5ba79a5a5f47c5e8bdfc978e19153d9cd08089",
+          "git_blob": "38447115d40c1180dcb9c2dc0c80626c2fe3a40c",
+          "bytes": 198
+        },
+        {
+          "path": "code2inv-103/103.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/103.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/103.c.smt",
+          "sha256": "28becf78066e280444a9e958fffcfd57547e214b5e721631ae3e490e5ffc979b",
+          "git_blob": "6db39978b1d3ce1db57aedd52f4ea395774357ca",
+          "bytes": 1172
+        }
+      ],
+      "inventory": {
+        "features": [],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 0,
+        "scalar_declarations": 1,
+        "operators": {
+          "<": 1,
+          "+": 1,
+          "==": 1
+        },
+        "calls": {
+          "assert": 1
+        },
+        "types": {
+          "int": 1
+        },
+        "alpha_fingerprint": "71feee09152ac3ed9f1d547b988b10f41107748caffad8ce903b28d7735f1f8e",
+        "constant_normalized_family": "ef928f77cc77a6977d32c6a8e3652f18d9d8934a560c8bd13379edb31319b398",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        0,
+        1
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-128",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-128/128.c",
+      "verification_conditions": "code2inv-128/128.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-128/128.c",
+          "upstream_path": "benchmarks/C_instances/c/128.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/128.c",
+          "sha256": "43f87a8ae6f6252afc9d5ad173160011cb46857d881f7c7e11604e07d5d25f1e",
+          "git_blob": "5b36abbac904d2b6d5382f5598c26d3277702797",
+          "bytes": 203
+        },
+        {
+          "path": "code2inv-128/128.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/128.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/128.c.smt",
+          "sha256": "432afa89a9f76b0e65fd1a6cf3356f957deaae5d94d5d35cafea1542213aa737",
+          "git_blob": "4f37840a60c9d540fc9f8c6adea8801a7251253c",
+          "bytes": 1448
+        }
+      ],
+      "inventory": {
+        "features": [],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 0,
+        "scalar_declarations": 2,
+        "operators": {
+          "<": 1,
+          "+": 1,
+          ">=": 1
+        },
+        "calls": {
+          "assert": 1
+        },
+        "types": {
+          "int": 2
+        },
+        "alpha_fingerprint": "e703ce2f43f85d46122f63f7f616a9d3c806509e3a8db94d103f699239b00450",
+        "constant_normalized_family": "6b839b83161537c23dc717a52fda7aa40c3215863fa5e6c5939736c30177b7ef",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        0,
+        2
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-099",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-099/99.c",
+      "verification_conditions": "code2inv-099/99.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-099/99.c",
+          "upstream_path": "benchmarks/C_instances/c/99.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/99.c",
+          "sha256": "025c9d5db12bf12d17825ede8d39f91f010ad26df0e2e359430e750893a3c25f",
+          "git_blob": "7798647e098fa5eb6e4b4867d2022373d49b2fa7",
+          "bytes": 269
+        },
+        {
+          "path": "code2inv-099/99.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/99.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/99.c.smt",
+          "sha256": "4951852ee2a1d64c2ff94f2e13a2dc5b9091c2f57106e6cab1e30513b7205d9c",
+          "git_blob": "27b6777837a9e05bf4a2d0fac712db0e6c97ab69",
+          "bytes": 2007
+        }
+      ],
+      "inventory": {
+        "features": [],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 0,
+        "scalar_declarations": 3,
+        "operators": {
+          ">=": 1,
+          ">": 1,
+          "+": 2,
+          "-": 1,
+          "==": 1
+        },
+        "calls": {
+          "assume": 1,
+          "assert": 1
+        },
+        "types": {
+          "int": 3
+        },
+        "alpha_fingerprint": "c78c05f93e3d823ada424c3550c529f35b10e6acac3648e82d00f1d3993326f0",
+        "constant_normalized_family": "bc6a22211f9736b12d852d113a06d6504a664207364973e014c8264dcec64bac",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        0,
+        3
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-086",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-086/86.c",
+      "verification_conditions": "code2inv-086/86.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-086/86.c",
+          "upstream_path": "benchmarks/C_instances/c/86.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/86.c",
+          "sha256": "82e29266a67c341c234073273b6008a10e007dd21ffa10afa792c0c4c9285278",
+          "git_blob": "5a25925a6ee9a06d4d3ab960ab273ca379482816",
+          "bytes": 254
+        },
+        {
+          "path": "code2inv-086/86.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/86.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/86.c.smt",
+          "sha256": "fcf2df1bc3e09303928fba2c93e7d8b3690d6bd6aa97805e46789230930658c9",
+          "git_blob": "690ad333ec0912ec5b3c76a4d7c8d3a6dda3bef1",
+          "bytes": 1627
+        }
+      ],
+      "inventory": {
+        "features": [],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 0,
+        "scalar_declarations": 5,
+        "operators": {
+          "<": 1,
+          "+": 2,
+          ">": 1
+        },
+        "calls": {
+          "assert": 1
+        },
+        "types": {
+          "int": 5
+        },
+        "alpha_fingerprint": "8dc21dbfa32b6ce0aac338a76c8454e2d5a55356f9d63150284adbee5a1add9a",
+        "constant_normalized_family": "b3bd494ebef118c57cfa729a277e588dbd92a6fe566b67e6e88b5723dd91462d",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        0,
+        4
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-026",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-026/26.c",
+      "verification_conditions": "code2inv-026/26.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-026/26.c",
+          "upstream_path": "benchmarks/C_instances/c/26.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/26.c",
+          "sha256": "0c7e5c2f10d9570d4e225b37523b4887dcef712e1343329ed0952728943159f1",
+          "git_blob": "d7edc1463680a377295d259f0a490be41ff50efb",
+          "bytes": 219
+        },
+        {
+          "path": "code2inv-026/26.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/26.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/26.c.smt",
+          "sha256": "8e6bd9bd7aff263ac9bd0771d23f9c1a7967dd7bf8582eb41bbd88210dd1c5d0",
+          "git_blob": "a5165dff59011139a8dbc44c76b65612c565d573",
+          "bytes": 1463
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 2,
+        "operators": {
+          ">": 1,
+          "-": 1,
+          "!=": 1,
+          "<": 1
+        },
+        "calls": {
+          "assert": 1
+        },
+        "types": {
+          "int": 2
+        },
+        "alpha_fingerprint": "aa4f711b19c7ecaabe7d6c913c223f070b359835b2cd17e23ed8701a93d5a709",
+        "constant_normalized_family": "91a6f66ca65d7a308162a06bef45bedff98411abf832feac9dce3c3dc5071c24",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        1,
+        2
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-068",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-068/68.c",
+      "verification_conditions": "code2inv-068/68.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-068/68.c",
+          "upstream_path": "benchmarks/C_instances/c/68.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/68.c",
+          "sha256": "b61fa3d726050f9e73ba46e50ad49551a369b15fa1e2c6c48a242ac57aaf89f0",
+          "git_blob": "205e452aa0b0c57bb14e4a91052c6d776e5de11f",
+          "bytes": 185
+        },
+        {
+          "path": "code2inv-068/68.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/68.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/68.c.smt",
+          "sha256": "a77a3ed33bef1fa6457e9d2df4f74e2af5ca34293e7c85cf73d8ca668f59b49a",
+          "git_blob": "9b4189e3aa69ec15e76ad0082fd09e8d046ba229",
+          "bytes": 1839
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 3,
+        "operators": {
+          "<=": 2,
+          "-": 1,
+          "+": 1,
+          ">": 1
+        },
+        "calls": {
+          "assert": 1
+        },
+        "types": {
+          "int": 3
+        },
+        "alpha_fingerprint": "8d61deb709c472b6db858def8634a1788fee8aa80d95e0c8f27bb3a7adf0437b",
+        "constant_normalized_family": "8c4014d853539ddb008cd2045e31840afd32729601692f32bc2832c5e7b36856",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        1,
+        3
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-069",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-069/69.c",
+      "verification_conditions": "code2inv-069/69.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-069/69.c",
+          "upstream_path": "benchmarks/C_instances/c/69.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/69.c",
+          "sha256": "743164dff9e9e6faa85ac8300fb57b5c3192ca123c8818c023c4f971462d9b37",
+          "git_blob": "c572c13da08268f4c403017e93f9aac77e7ccb50",
+          "bytes": 202
+        },
+        {
+          "path": "code2inv-069/69.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/69.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/69.c.smt",
+          "sha256": "96a636d97583444666c257dfb7e88bb622fc1de0b71b3006d0a8b0b0ee614836",
+          "git_blob": "430ac0cddea9fb910c4b01d3a245debe6246b7a0",
+          "bytes": 1837
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 6,
+        "operators": {
+          "<=": 1,
+          "-": 1,
+          "+": 1,
+          ">": 1,
+          ">=": 1
+        },
+        "calls": {
+          "assert": 1
+        },
+        "types": {
+          "int": 6
+        },
+        "alpha_fingerprint": "cb76d2b48c99ca7f467147da8a44fa0210d8f6a5f931ceb615e2039b85286ffe",
+        "constant_normalized_family": "009c56c25ee170ed12c442faad89663a97b2396e09747924bced1ffecba135dd",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        1,
+        4
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-109",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-109/109.c",
+      "verification_conditions": "code2inv-109/109.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-109/109.c",
+          "upstream_path": "benchmarks/C_instances/c/109.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/109.c",
+          "sha256": "b5de9b850a2f63b4305ac9bc79c726ac9ccf6776b6219cce6063d2c5df9b5d78",
+          "git_blob": "061bd2b2e68b3169b43f855c47752842e6928ebb",
+          "bytes": 205
+        },
+        {
+          "path": "code2inv-109/109.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/109.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/109.c.smt",
+          "sha256": "26d94ba01e313390d64727fa79e6517ac272d308066f7e50afb8ea128426d905",
+          "git_blob": "07f3a0522cb4ce2add2f9f755321efa2faa63d6e",
+          "bytes": 2832
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 2,
+        "scalar_declarations": 5,
+        "operators": {
+          "<": 2,
+          "+": 1,
+          ">": 1,
+          "<=": 1
+        },
+        "calls": {
+          "assert": 1
+        },
+        "types": {
+          "int": 5
+        },
+        "alpha_fingerprint": "b1e7757e5e49bfd296a7dded2fc8a13399dfbe32fa8dd1edcd6d2ce45ca6c530",
+        "constant_normalized_family": "6bf2c3f2a5e149c12a7111dd883a9539e224057bd03dbb80ad474fa73d2f06ba",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "deterministic",
+        2,
+        4
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-114",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-114/114.c",
+      "verification_conditions": "code2inv-114/114.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-114/114.c",
+          "upstream_path": "benchmarks/C_instances/c/114.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/114.c",
+          "sha256": "6ef660c5daed455afc2e93da7fe044a37b49b9665e585652fd31dc6a8a4b3f74",
+          "git_blob": "38868b7c9fa6e86dc5b13a80c6c4bcc9186acd4d",
+          "bytes": 260
+        },
+        {
+          "path": "code2inv-114/114.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/114.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/114.c.smt",
+          "sha256": "94bb67803017149292b3338920baa4890f88383cc4f63fb18037c9faa4856c55",
+          "git_blob": "297325874356012acda178636469bccd7189dfcd",
+          "bytes": 1963
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 2,
+        "operators": {
+          "+": 2,
+          "!=": 1,
+          "==": 1
+        },
+        "calls": {
+          "unknown": 1,
+          "assert": 1
+        },
+        "types": {
+          "int": 2
+        },
+        "alpha_fingerprint": "1bb532da06543a9e9ea663881617749b2762fd280825c35ddd9b150ad388e495",
+        "constant_normalized_family": "cd4959d4ac8fb9104cd9f1c07e990e852caffbf49d0ddcbd6e29218f37e8b90d",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "nondeterministic",
+        1,
+        2
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-088",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-088/88.c",
+      "verification_conditions": "code2inv-088/88.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-088/88.c",
+          "upstream_path": "benchmarks/C_instances/c/88.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/88.c",
+          "sha256": "bb8675696d4e53d01756fdb37bf02b56c822de51ca9849bad98bdeec725c0cf3",
+          "git_blob": "8a9d0947716a000acf76d7e72b9020306d9a4259",
+          "bytes": 410
+        },
+        {
+          "path": "code2inv-088/88.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/88.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/88.c.smt",
+          "sha256": "e2cd92b3d742c2f3770a35ca14f402867836d422e587de17049d4e31af566853",
+          "git_blob": "a00538fb8b02f5de423acd1c16e21f4d9954a0c3",
+          "bytes": 3238
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 3,
+        "operators": {
+          "+": 2,
+          "!=": 1,
+          "==": 1
+        },
+        "calls": {
+          "unknown": 1,
+          "assert": 1
+        },
+        "types": {
+          "int": 3
+        },
+        "alpha_fingerprint": "37c42c2d5c0ca210db76c9a21653c952721d692ba82e4bedb6d598b73e04d038",
+        "constant_normalized_family": "0cbc3a379f3ba1c7f821f7d840175e7a5bd8c4c657fe2552c306fe4c46dceeca",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "nondeterministic",
+        1,
+        3
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-090",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-090/90.c",
+      "verification_conditions": "code2inv-090/90.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-090/90.c",
+          "upstream_path": "benchmarks/C_instances/c/90.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/90.c",
+          "sha256": "9e01c65c69eece4791f77a87777b3dfdf487493438de6be703c4aca71ce5fc52",
+          "git_blob": "3257b8d70788f5723799ec3aca96b6063d655c7c",
+          "bytes": 440
+        },
+        {
+          "path": "code2inv-090/90.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/90.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/90.c.smt",
+          "sha256": "e2cd92b3d742c2f3770a35ca14f402867836d422e587de17049d4e31af566853",
+          "git_blob": "a00538fb8b02f5de423acd1c16e21f4d9954a0c3",
+          "bytes": 3238
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 6,
+        "operators": {
+          "+": 2,
+          "!=": 1,
+          "==": 1
+        },
+        "calls": {
+          "unknown": 1,
+          "assert": 1
+        },
+        "types": {
+          "int": 6
+        },
+        "alpha_fingerprint": "16d43446e98fb9b259e44a9c46fcc3dac8d94b1733ac7f84ce6db5b5198b4301",
+        "constant_normalized_family": "6fc972f64b8171d1a917dbd35783f460bf7aa332dd24f54ba512f93c0e1d274e",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "nondeterministic",
+        1,
+        4
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-052",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-052/52.c",
+      "verification_conditions": "code2inv-052/52.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-052/52.c",
+          "upstream_path": "benchmarks/C_instances/c/52.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/52.c",
+          "sha256": "92545572c452694e05de86d8bb605acdc142f57d925d33ac1cdd16f1e3fd59a7",
+          "git_blob": "dcf6ec7aadce0c71e8e2838a0545560bbcc48d76",
+          "bytes": 386
+        },
+        {
+          "path": "code2inv-052/52.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/52.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/52.c.smt",
+          "sha256": "2ebecb8e18047824ed11da6a75e0a4d529990f0e3a95362999c867c2046b2244",
+          "git_blob": "7cd4213604659fc5898dd5001529c7d905fc1ca4",
+          "bytes": 1847
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 5,
+        "scalar_declarations": 1,
+        "operators": {
+          "!=": 1,
+          "+": 1,
+          "==": 2,
+          "<": 1,
+          ">": 1
+        },
+        "calls": {
+          "unknown": 2,
+          "assert": 1
+        },
+        "types": {
+          "int": 1
+        },
+        "alpha_fingerprint": "328d89d3d20686adc8e433621c28b9a7b599c4537a4e0d60a96835a0262305ff",
+        "constant_normalized_family": "da86c3442eb0502644cbba849b2f98f6c215cbd2ea5949827d64e134aca7643d",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "nondeterministic",
+        2,
+        1
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-044",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-044/44.c",
+      "verification_conditions": "code2inv-044/44.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-044/44.c",
+          "upstream_path": "benchmarks/C_instances/c/44.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/44.c",
+          "sha256": "3cb854e3807f5aa1eddd498d9c59ba9a214baa793dd529f7e0b5da5a0f55df1f",
+          "git_blob": "8a6311751ef3430643f2560f46e383fa3634bb40",
+          "bytes": 400
+        },
+        {
+          "path": "code2inv-044/44.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/44.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/44.c.smt",
+          "sha256": "680f321be28b9b0e56b91df80f3474efe7302e35379ddce4d4fb4fc7533bbcb3",
+          "git_blob": "652356b07c85703e5bbd05a29c552790bff185ae",
+          "bytes": 2207
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 4,
+        "scalar_declarations": 2,
+        "operators": {
+          ">": 2,
+          "+": 1,
+          "==": 1,
+          "<=": 1,
+          "!=": 1
+        },
+        "calls": {
+          "assume": 1,
+          "unknown": 2,
+          "assert": 1
+        },
+        "types": {
+          "int": 2
+        },
+        "alpha_fingerprint": "f9bab3c351136eb27f83f86da87f22471560dbf877b2316f7ef16e0244d8928d",
+        "constant_normalized_family": "52cf065181965f3cd342715f604d01dbf053cb0cb38c37e789a3b8b7183b81f9",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "nondeterministic",
+        2,
+        2
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-073",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-073/73.c",
+      "verification_conditions": "code2inv-073/73.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-073/73.c",
+          "upstream_path": "benchmarks/C_instances/c/73.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/73.c",
+          "sha256": "133f14e3b247d035fb209dfe73127bba2f6c8109ea946e272d82f734e3cfe08e",
+          "git_blob": "50cce06c559d63728ef3901df78e8829006aa91c",
+          "bytes": 350
+        },
+        {
+          "path": "code2inv-073/73.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/73.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/73.c.smt",
+          "sha256": "e6eecca82a0f8b6f8fc33fbe197fc96cb27f80469d28b0486ae02e729a5392fe",
+          "git_blob": "649b81d955de9475bcda0284e2a717144ccfc26c",
+          "bytes": 2581
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 3,
+        "scalar_declarations": 3,
+        "operators": {
+          ">=": 4,
+          "*": 1,
+          "<": 2,
+          "+": 2
+        },
+        "calls": {
+          "assume": 2,
+          "unknown": 1,
+          "assert": 1
+        },
+        "types": {
+          "int": 3
+        },
+        "alpha_fingerprint": "d1441d68f4dcf9a29a28d1d26bc3af4a8ae0d6156dcce1cc8987980e21935110",
+        "constant_normalized_family": "7df739616d478cc0f8a496a6f91db388f4460a11cbc285be7532f014fa6f67b2",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "nondeterministic",
+        2,
+        3
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "code2inv-055",
+      "collection": "Code2Inv",
+      "primary_input": "code2inv-055/55.c",
+      "verification_conditions": "code2inv-055/55.c.smt",
+      "assets": [
+        {
+          "path": "code2inv-055/55.c",
+          "upstream_path": "benchmarks/C_instances/c/55.c",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c/55.c",
+          "sha256": "f84a0d126fe0b5090e29e0d57049d7020318393e14c8742b00c7d72747240b2d",
+          "git_blob": "ba844727d9f1cb5827fb53e8f54ece5171f964c6",
+          "bytes": 443
+        },
+        {
+          "path": "code2inv-055/55.c.smt",
+          "upstream_path": "benchmarks/C_instances/c_smt2/55.c.smt",
+          "repository": "code2inv",
+          "commit": "336a7063ae0d6313a6993dfb897766d01d5ba41a",
+          "url": "https://github.com/PL-ML/code2inv/blob/336a7063ae0d6313a6993dfb897766d01d5ba41a/benchmarks/C_instances/c_smt2/55.c.smt",
+          "sha256": "9b942b89d3149e883ef4ca4fb1b5bf67f523bc22b5303e438717130b29f1bd40",
+          "git_blob": "695110ccadc5f9259944f3b7efb6de48f6d9f563",
+          "bytes": 2215
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 5,
+        "scalar_declarations": 5,
+        "operators": {
+          ">": 3,
+          "+": 1,
+          "==": 2,
+          "<": 1
+        },
+        "calls": {
+          "assume": 1,
+          "unknown": 2,
+          "assert": 1
+        },
+        "types": {
+          "int": 5
+        },
+        "alpha_fingerprint": "575fbf0360ed09e343ec2512fd947278de66a87d4dcd0b3741fa65745a488552",
+        "constant_normalized_family": "982a1da52f89ad933dee4d0f42770e4c1df88adaa8a66345cd76045627be92a7",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "selection_stratum": [
+        "nondeterministic",
+        2,
+        4
+      ],
+      "upstream_expected_verdict": null,
+      "semantics": "Authoritative upstream mathematical-integer SMT VCs; NOT native machine-C semantics.",
+      "license_status": "No root LICENSE file at the pinned Code2Inv revision; permission is not inferred from public availability.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "C prompt/trace experiment integration is not yet implemented."
+    },
+    {
+      "id": "svcomp-loop-invariants-eq1",
+      "collection": "SV-COMP",
+      "primary_input": "svcomp-loop-invariants-eq1/eq1.c",
+      "assets": [
+        {
+          "path": "svcomp-loop-invariants-eq1/eq1.yml",
+          "upstream_path": "c/loop-invariants/eq1.yml",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-invariants/eq1.yml",
+          "sha256": "dc91704fff34738f556be8785198edab5858bce41b001005002df176fa8ae38d",
+          "git_blob": "028e8b0a8ed72b164d2936aee0b140932652ba59",
+          "bytes": 663
+        },
+        {
+          "path": "svcomp-loop-invariants-eq1/eq1.c",
+          "upstream_path": "c/loop-invariants/eq1.c",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-invariants/eq1.c",
+          "sha256": "ae5f1fff3bb2ff86380b316485dce79621d8b0e49d86d465419850c3d4f0724a",
+          "git_blob": "46fb9e193e092e6746a53334e2d25161bc81c516",
+          "bytes": 965
+        },
+        {
+          "path": "svcomp-loop-invariants-eq1/properties/no-overflow.prp",
+          "upstream_path": "c/properties/no-overflow.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/no-overflow.prp",
+          "sha256": "e82f5222c466476cc45565fc39e73119d8512de62584390eb0c3051f3d4ee602",
+          "git_blob": "26c5bded7af2f0ef083f6b79149516c915de7b7f",
+          "bytes": 42
+        },
+        {
+          "path": "svcomp-loop-invariants-eq1/properties/termination.prp",
+          "upstream_path": "c/properties/termination.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/termination.prp",
+          "sha256": "1e9ed9441e9f7768516957a8b76e53c94ea717b44e652edefc6cf4b53e5931f9",
+          "git_blob": "cc40b9a2c9d02dfa0aadca756af48537e94afaff",
+          "bytes": 35
+        },
+        {
+          "path": "svcomp-loop-invariants-eq1/properties/unreach-call.prp",
+          "upstream_path": "c/properties/unreach-call.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/unreach-call.prp",
+          "sha256": "0c6a90cfc3ad4545225a0537ddc37b8a11ea5a37b906c053bb298b748f810150",
+          "git_blob": "7ae12e84e7ce974f842dd8fd7f6f72dfb3fb341d",
+          "bytes": 53
+        }
+      ],
+      "task_metadata": {
+        "format_version": "2.0",
+        "input_files": "eq1.c",
+        "properties": [
+          {
+            "property_file": "../properties/no-overflow.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/termination.prp",
+            "expected_verdict": false
+          },
+          {
+            "property_file": "../properties/unreach-call.prp",
+            "expected_verdict": true
+          }
+        ],
+        "options": {
+          "language": "C",
+          "data_model": "ILP32"
+        }
+      },
+      "properties": [
+        {
+          "property_file": "../properties/no-overflow.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/no-overflow.prp"
+        },
+        {
+          "property_file": "../properties/termination.prp",
+          "expected_verdict": false,
+          "upstream_path": "c/properties/termination.prp"
+        },
+        {
+          "property_file": "../properties/unreach-call.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/unreach-call.prp"
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism",
+          "unsigned_machine_integers"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 4,
+        "operators": {
+          "&&": 1,
+          "==": 2
+        },
+        "calls": {
+          "__VERIFIER_nondet_uint": 4,
+          "__VERIFIER_assert": 1
+        },
+        "types": {
+          "unsigned int": 4
+        },
+        "alpha_fingerprint": "2d83747850bff9fd8d7f8e3c86eed452ce91aa2409f480400f81e5399d5a45e3",
+        "constant_normalized_family": "b708d52d44ac6219dca2012b90ee209e2a424bd87a704034448d4079f11e37c4",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "upstream_expected_verdict": true,
+      "role": "positive_safety_task",
+      "semantics": "Native C; official data model ILP32; unreach-call property.",
+      "license_status": "Retained upstream notices and available license files; see provenance and source headers.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "Native C semantics and C trace execution unsupported by the existing Python experiment pipeline."
+    },
+    {
+      "id": "svcomp-loop-invariants-mod4",
+      "collection": "SV-COMP",
+      "primary_input": "svcomp-loop-invariants-mod4/mod4.c",
+      "assets": [
+        {
+          "path": "svcomp-loop-invariants-mod4/mod4.yml",
+          "upstream_path": "c/loop-invariants/mod4.yml",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-invariants/mod4.yml",
+          "sha256": "e654930b5a83c4ebeb43ab0bc9c47d9e4ed5b816738188d505977dacc50ad913",
+          "git_blob": "ee35b9e63ab59ee2e02c4567db8870e4e7628a36",
+          "bytes": 673
+        },
+        {
+          "path": "svcomp-loop-invariants-mod4/mod4.c",
+          "upstream_path": "c/loop-invariants/mod4.c",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-invariants/mod4.c",
+          "sha256": "64b66af70d4f49939ba3192d7cc9b9b1fa8ae6dc1d14cbdfbbce4a0ddc403713",
+          "git_blob": "7ea26cbe3feabde1d9519e74f9fe4fd2e8faf50f",
+          "bytes": 756
+        },
+        {
+          "path": "svcomp-loop-invariants-mod4/properties/no-overflow.prp",
+          "upstream_path": "c/properties/no-overflow.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/no-overflow.prp",
+          "sha256": "e82f5222c466476cc45565fc39e73119d8512de62584390eb0c3051f3d4ee602",
+          "git_blob": "26c5bded7af2f0ef083f6b79149516c915de7b7f",
+          "bytes": 42
+        },
+        {
+          "path": "svcomp-loop-invariants-mod4/properties/termination.prp",
+          "upstream_path": "c/properties/termination.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/termination.prp",
+          "sha256": "1e9ed9441e9f7768516957a8b76e53c94ea717b44e652edefc6cf4b53e5931f9",
+          "git_blob": "cc40b9a2c9d02dfa0aadca756af48537e94afaff",
+          "bytes": 35
+        },
+        {
+          "path": "svcomp-loop-invariants-mod4/properties/unreach-call.prp",
+          "upstream_path": "c/properties/unreach-call.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/unreach-call.prp",
+          "sha256": "0c6a90cfc3ad4545225a0537ddc37b8a11ea5a37b906c053bb298b748f810150",
+          "git_blob": "7ae12e84e7ce974f842dd8fd7f6f72dfb3fb341d",
+          "bytes": 53
+        }
+      ],
+      "task_metadata": {
+        "format_version": "2.0",
+        "input_files": "mod4.c",
+        "properties": [
+          {
+            "property_file": "../properties/no-overflow.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/termination.prp",
+            "expected_verdict": false
+          },
+          {
+            "property_file": "../properties/unreach-call.prp",
+            "expected_verdict": true
+          }
+        ],
+        "options": {
+          "language": "C",
+          "data_model": "ILP32"
+        }
+      },
+      "properties": [
+        {
+          "property_file": "../properties/no-overflow.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/no-overflow.prp"
+        },
+        {
+          "property_file": "../properties/termination.prp",
+          "expected_verdict": false,
+          "upstream_path": "c/properties/termination.prp"
+        },
+        {
+          "property_file": "../properties/unreach-call.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/unreach-call.prp"
+        }
+      ],
+      "inventory": {
+        "features": [
+          "modular_arithmetic",
+          "nondeterminism",
+          "unsigned_machine_integers"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 0,
+        "scalar_declarations": 1,
+        "operators": {
+          "%": 1
+        },
+        "calls": {
+          "__VERIFIER_nondet_int": 1,
+          "__VERIFIER_assert": 1
+        },
+        "types": {
+          "unsigned int": 1
+        },
+        "alpha_fingerprint": "e1b4d1f8917b94ee071c381ccfe6b687f5bd22cbd17b664102d077e19b9a93c6",
+        "constant_normalized_family": "f98a35fc30f4d937a2335e606a3f705d29c73fbabf33dd89b9c751a27626f355",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "upstream_expected_verdict": true,
+      "role": "positive_safety_task",
+      "semantics": "Native C; official data model ILP32; unreach-call property.",
+      "license_status": "Retained upstream notices and available license files; see provenance and source headers.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "Native C semantics and C trace execution unsupported by the existing Python experiment pipeline."
+    },
+    {
+      "id": "svcomp-loop-invariants-linear-inequality-inv-a",
+      "collection": "SV-COMP",
+      "primary_input": "svcomp-loop-invariants-linear-inequality-inv-a/linear-inequality-inv-a.c",
+      "assets": [
+        {
+          "path": "svcomp-loop-invariants-linear-inequality-inv-a/linear-inequality-inv-a.yml",
+          "upstream_path": "c/loop-invariants/linear-inequality-inv-a.yml",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-invariants/linear-inequality-inv-a.yml",
+          "sha256": "6ab638039f015c2ad11f8bee264ce3db9b22839004baff0a9b821f113e4c6806",
+          "git_blob": "87cb3609c59351e8da46001f4d869b06b16b077c",
+          "bytes": 640
+        },
+        {
+          "path": "svcomp-loop-invariants-linear-inequality-inv-a/linear-inequality-inv-a.c",
+          "upstream_path": "c/loop-invariants/linear-inequality-inv-a.c",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-invariants/linear-inequality-inv-a.c",
+          "sha256": "d2b9c65bc0d5e6814219e058019ca5895f861b5993bd9ff39cc6b3d5fb3e6a41",
+          "git_blob": "54551e2f96aa2196ee98f4a0020dbaeea7302e28",
+          "bytes": 963
+        },
+        {
+          "path": "svcomp-loop-invariants-linear-inequality-inv-a/properties/no-overflow.prp",
+          "upstream_path": "c/properties/no-overflow.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/no-overflow.prp",
+          "sha256": "e82f5222c466476cc45565fc39e73119d8512de62584390eb0c3051f3d4ee602",
+          "git_blob": "26c5bded7af2f0ef083f6b79149516c915de7b7f",
+          "bytes": 42
+        },
+        {
+          "path": "svcomp-loop-invariants-linear-inequality-inv-a/properties/termination.prp",
+          "upstream_path": "c/properties/termination.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/termination.prp",
+          "sha256": "1e9ed9441e9f7768516957a8b76e53c94ea717b44e652edefc6cf4b53e5931f9",
+          "git_blob": "cc40b9a2c9d02dfa0aadca756af48537e94afaff",
+          "bytes": 35
+        },
+        {
+          "path": "svcomp-loop-invariants-linear-inequality-inv-a/properties/unreach-call.prp",
+          "upstream_path": "c/properties/unreach-call.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/unreach-call.prp",
+          "sha256": "0c6a90cfc3ad4545225a0537ddc37b8a11ea5a37b906c053bb298b748f810150",
+          "git_blob": "7ae12e84e7ce974f842dd8fd7f6f72dfb3fb341d",
+          "bytes": 53
+        },
+        {
+          "path": "svcomp-loop-invariants-linear-inequality-inv-a/properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-branches.prp",
+          "sha256": "1a5dabd5c80116887833695a6bc7551a1b5e1e42f4e2888144bcf1cff85b9045",
+          "git_blob": "1523f2a2f68001edfb5ac24bcbc175fcd874ed30",
+          "bytes": 56
+        }
+      ],
+      "task_metadata": {
+        "format_version": "2.0",
+        "input_files": "linear-inequality-inv-a.c",
+        "properties": [
+          {
+            "property_file": "../properties/no-overflow.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/termination.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/unreach-call.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/coverage-branches.prp"
+          }
+        ],
+        "options": {
+          "language": "C",
+          "data_model": "ILP32"
+        }
+      },
+      "properties": [
+        {
+          "property_file": "../properties/no-overflow.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/no-overflow.prp"
+        },
+        {
+          "property_file": "../properties/termination.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/termination.prp"
+        },
+        {
+          "property_file": "../properties/unreach-call.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/unreach-call.prp"
+        },
+        {
+          "property_file": "../properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp"
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism",
+          "unsigned_machine_integers"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 3,
+        "scalar_declarations": 4,
+        "operators": {
+          "==": 1,
+          "<": 2,
+          ">": 1
+        },
+        "calls": {
+          "__VERIFIER_nondet_uchar": 2,
+          "reach_error": 2
+        },
+        "types": {
+          "unsigned char": 2,
+          "unsigned int": 2
+        },
+        "alpha_fingerprint": "3a603a4bd68d5630f53de9d036ebb78bb4c3a5d7949b32f5349a950c3d54ca28",
+        "constant_normalized_family": "e8414a2ff85d9ff004f5203cb0e6202912062dcccfb1d42f51613923fc4f97e3",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "upstream_expected_verdict": true,
+      "role": "positive_safety_task",
+      "semantics": "Native C; official data model ILP32; unreach-call property.",
+      "license_status": "Retained upstream notices and available license files; see provenance and source headers.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "Native C semantics and C trace execution unsupported by the existing Python experiment pipeline."
+    },
+    {
+      "id": "svcomp-loop-lit-bhmr2007",
+      "collection": "SV-COMP",
+      "primary_input": "svcomp-loop-lit-bhmr2007/bhmr2007.i",
+      "assets": [
+        {
+          "path": "svcomp-loop-lit-bhmr2007/bhmr2007.yml",
+          "upstream_path": "c/loop-lit/bhmr2007.yml",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/bhmr2007.yml",
+          "sha256": "22eec5f2ffe31422854dcdc40459fb3bed170faefb6141ba165390b251224d28",
+          "git_blob": "57e93beceef29a0d8c0c49c746891e791877250c",
+          "bytes": 493
+        },
+        {
+          "path": "svcomp-loop-lit-bhmr2007/bhmr2007.i",
+          "upstream_path": "c/loop-lit/bhmr2007.i",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/bhmr2007.i",
+          "sha256": "07cb9038cdaf0e413365ff784390031a7ba733892c02a00ed18b47b0bbaf3c4d",
+          "git_blob": "4fccf972dc61429bd518c3e89bd718672a98bf59",
+          "bytes": 1351
+        },
+        {
+          "path": "svcomp-loop-lit-bhmr2007/bhmr2007.c",
+          "upstream_path": "c/loop-lit/bhmr2007.c",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/bhmr2007.c",
+          "sha256": "358ed0b33a6344552d604a62ef774ba6cda0a2124613462d81fdf5f38f74f819",
+          "git_blob": "e6ad53648dbaceab3bb42ecda53b5371f976f983",
+          "bytes": 524
+        },
+        {
+          "path": "svcomp-loop-lit-bhmr2007/properties/termination.prp",
+          "upstream_path": "c/properties/termination.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/termination.prp",
+          "sha256": "1e9ed9441e9f7768516957a8b76e53c94ea717b44e652edefc6cf4b53e5931f9",
+          "git_blob": "cc40b9a2c9d02dfa0aadca756af48537e94afaff",
+          "bytes": 35
+        },
+        {
+          "path": "svcomp-loop-lit-bhmr2007/properties/unreach-call.prp",
+          "upstream_path": "c/properties/unreach-call.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/unreach-call.prp",
+          "sha256": "0c6a90cfc3ad4545225a0537ddc37b8a11ea5a37b906c053bb298b748f810150",
+          "git_blob": "7ae12e84e7ce974f842dd8fd7f6f72dfb3fb341d",
+          "bytes": 53
+        },
+        {
+          "path": "svcomp-loop-lit-bhmr2007/properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-branches.prp",
+          "sha256": "1a5dabd5c80116887833695a6bc7551a1b5e1e42f4e2888144bcf1cff85b9045",
+          "git_blob": "1523f2a2f68001edfb5ac24bcbc175fcd874ed30",
+          "bytes": 56
+        },
+        {
+          "path": "svcomp-loop-lit-bhmr2007/properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-conditions.prp",
+          "sha256": "b63df4ed4241863f8f66a4718e28de35bd1fa167b685621cf0240fe7880851aa",
+          "git_blob": "1e243ea3a9042c4e56e5bd84b1def7ab144cd579",
+          "bytes": 57
+        },
+        {
+          "path": "svcomp-loop-lit-bhmr2007/properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-statements.prp",
+          "sha256": "76b6fc272c83c3067e7316cecaecf36a9608925debeec4e5a280426af6ab625e",
+          "git_blob": "5fec1da6edeb3f7a70639bb4168aaf2f6073f9e5",
+          "bytes": 59
+        },
+        {
+          "path": "svcomp-loop-lit-bhmr2007/LICENSE.txt",
+          "upstream_path": "c/loop-lit/LICENSE.txt",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/LICENSE.txt",
+          "sha256": "8567e6887825f675edfb34ec94edd4e711902c1868239313d684140b12fab732",
+          "git_blob": "ba81f828233ed7d397f86de1bd0d09c5ef97b7bc",
+          "bytes": 28
+        }
+      ],
+      "task_metadata": {
+        "format_version": "2.0",
+        "input_files": "bhmr2007.i",
+        "properties": [
+          {
+            "property_file": "../properties/termination.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/unreach-call.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/coverage-branches.prp"
+          },
+          {
+            "property_file": "../properties/coverage-conditions.prp"
+          },
+          {
+            "property_file": "../properties/coverage-statements.prp"
+          }
+        ],
+        "options": {
+          "language": "C",
+          "data_model": "ILP32"
+        }
+      },
+      "properties": [
+        {
+          "property_file": "../properties/termination.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/termination.prp"
+        },
+        {
+          "property_file": "../properties/unreach-call.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/unreach-call.prp"
+        },
+        {
+          "property_file": "../properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp"
+        },
+        {
+          "property_file": "../properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp"
+        },
+        {
+          "property_file": "../properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp"
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 2,
+        "scalar_declarations": 4,
+        "operators": {
+          "&&": 1,
+          ">=": 1,
+          "<=": 1,
+          "<": 1,
+          "+": 6,
+          "==": 1,
+          "*": 1
+        },
+        "calls": {
+          "__VERIFIER_nondet_int": 2,
+          "__VERIFIER_assert": 1
+        },
+        "types": {
+          "int": 4
+        },
+        "alpha_fingerprint": "ac4b1be689b901e67d60c75fccc05a2ac686e7dadc2787b3deae57b691f45769",
+        "constant_normalized_family": "3ae14bcfa4f6c80a68c859d4031105051e1520e40977967c4b5ee92b38598e15",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "upstream_expected_verdict": true,
+      "role": "positive_safety_task",
+      "semantics": "Native C; official data model ILP32; unreach-call property.",
+      "license_status": "Retained upstream notices and available license files; see provenance and source headers.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "Native C semantics and C trace execution unsupported by the existing Python experiment pipeline."
+    },
+    {
+      "id": "svcomp-loop-lit-cggmp2005",
+      "collection": "SV-COMP",
+      "primary_input": "svcomp-loop-lit-cggmp2005/cggmp2005.i",
+      "assets": [
+        {
+          "path": "svcomp-loop-lit-cggmp2005/cggmp2005.yml",
+          "upstream_path": "c/loop-lit/cggmp2005.yml",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/cggmp2005.yml",
+          "sha256": "f319ef086e665ec80f04587eacb0a13bfad5cbcb555d86f99b4066f80bec8b98",
+          "git_blob": "e04ecbae5a29faf33bde5843a919551e9516e738",
+          "bytes": 571
+        },
+        {
+          "path": "svcomp-loop-lit-cggmp2005/cggmp2005.i",
+          "upstream_path": "c/loop-lit/cggmp2005.i",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/cggmp2005.i",
+          "sha256": "d9c82f96058e75055db08c6be05f7339c74a06f1004576b8854261e31deb5a7c",
+          "git_blob": "028f64c3f697976e3c3c958bf079923a2478dd52",
+          "bytes": 1126
+        },
+        {
+          "path": "svcomp-loop-lit-cggmp2005/cggmp2005.c",
+          "upstream_path": "c/loop-lit/cggmp2005.c",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/cggmp2005.c",
+          "sha256": "9b2e580179989d30a2532300d7691a14943052c6ee85fab170a59070c70f0c6d",
+          "git_blob": "8d693af43e10f901629f220b2cad93578e328c5c",
+          "bytes": 357
+        },
+        {
+          "path": "svcomp-loop-lit-cggmp2005/properties/no-overflow.prp",
+          "upstream_path": "c/properties/no-overflow.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/no-overflow.prp",
+          "sha256": "e82f5222c466476cc45565fc39e73119d8512de62584390eb0c3051f3d4ee602",
+          "git_blob": "26c5bded7af2f0ef083f6b79149516c915de7b7f",
+          "bytes": 42
+        },
+        {
+          "path": "svcomp-loop-lit-cggmp2005/properties/termination.prp",
+          "upstream_path": "c/properties/termination.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/termination.prp",
+          "sha256": "1e9ed9441e9f7768516957a8b76e53c94ea717b44e652edefc6cf4b53e5931f9",
+          "git_blob": "cc40b9a2c9d02dfa0aadca756af48537e94afaff",
+          "bytes": 35
+        },
+        {
+          "path": "svcomp-loop-lit-cggmp2005/properties/unreach-call.prp",
+          "upstream_path": "c/properties/unreach-call.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/unreach-call.prp",
+          "sha256": "0c6a90cfc3ad4545225a0537ddc37b8a11ea5a37b906c053bb298b748f810150",
+          "git_blob": "7ae12e84e7ce974f842dd8fd7f6f72dfb3fb341d",
+          "bytes": 53
+        },
+        {
+          "path": "svcomp-loop-lit-cggmp2005/properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-branches.prp",
+          "sha256": "1a5dabd5c80116887833695a6bc7551a1b5e1e42f4e2888144bcf1cff85b9045",
+          "git_blob": "1523f2a2f68001edfb5ac24bcbc175fcd874ed30",
+          "bytes": 56
+        },
+        {
+          "path": "svcomp-loop-lit-cggmp2005/properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-conditions.prp",
+          "sha256": "b63df4ed4241863f8f66a4718e28de35bd1fa167b685621cf0240fe7880851aa",
+          "git_blob": "1e243ea3a9042c4e56e5bd84b1def7ab144cd579",
+          "bytes": 57
+        },
+        {
+          "path": "svcomp-loop-lit-cggmp2005/properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-statements.prp",
+          "sha256": "76b6fc272c83c3067e7316cecaecf36a9608925debeec4e5a280426af6ab625e",
+          "git_blob": "5fec1da6edeb3f7a70639bb4168aaf2f6073f9e5",
+          "bytes": 59
+        },
+        {
+          "path": "svcomp-loop-lit-cggmp2005/LICENSE.txt",
+          "upstream_path": "c/loop-lit/LICENSE.txt",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/LICENSE.txt",
+          "sha256": "8567e6887825f675edfb34ec94edd4e711902c1868239313d684140b12fab732",
+          "git_blob": "ba81f828233ed7d397f86de1bd0d09c5ef97b7bc",
+          "bytes": 28
+        }
+      ],
+      "task_metadata": {
+        "format_version": "2.0",
+        "input_files": "cggmp2005.i",
+        "properties": [
+          {
+            "property_file": "../properties/no-overflow.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/termination.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/unreach-call.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/coverage-branches.prp"
+          },
+          {
+            "property_file": "../properties/coverage-conditions.prp"
+          },
+          {
+            "property_file": "../properties/coverage-statements.prp"
+          }
+        ],
+        "options": {
+          "language": "C",
+          "data_model": "ILP32"
+        }
+      },
+      "properties": [
+        {
+          "property_file": "../properties/no-overflow.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/no-overflow.prp"
+        },
+        {
+          "property_file": "../properties/termination.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/termination.prp"
+        },
+        {
+          "property_file": "../properties/unreach-call.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/unreach-call.prp"
+        },
+        {
+          "property_file": "../properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp"
+        },
+        {
+          "property_file": "../properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp"
+        },
+        {
+          "property_file": "../properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp"
+        }
+      ],
+      "inventory": {
+        "features": [],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 0,
+        "scalar_declarations": 2,
+        "operators": {
+          ">=": 1,
+          "+": 2,
+          "==": 1
+        },
+        "calls": {
+          "__VERIFIER_assert": 1
+        },
+        "types": {
+          "int": 2
+        },
+        "alpha_fingerprint": "4e23719b6a7166cdc887eca59fdd5b1e3867990a5f5288e0af4d339d31399ea5",
+        "constant_normalized_family": "fd6bb1b484615420637b9d5f613c8036952b57865d5cf27dc03efa8b21c49c08",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "upstream_expected_verdict": true,
+      "role": "positive_safety_task",
+      "semantics": "Native C; official data model ILP32; unreach-call property.",
+      "license_status": "Retained upstream notices and available license files; see provenance and source headers.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "Native C semantics and C trace execution unsupported by the existing Python experiment pipeline."
+    },
+    {
+      "id": "svcomp-loop-lit-css2003",
+      "collection": "SV-COMP",
+      "primary_input": "svcomp-loop-lit-css2003/css2003.i",
+      "assets": [
+        {
+          "path": "svcomp-loop-lit-css2003/css2003.yml",
+          "upstream_path": "c/loop-lit/css2003.yml",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/css2003.yml",
+          "sha256": "1b544fb29dabf1a94f929b4bc71975685d36f5ac4fe832c9919a4ffb703c23b5",
+          "git_blob": "6f2222e59b729238f15f06f67ded87a464734aba",
+          "bytes": 491
+        },
+        {
+          "path": "svcomp-loop-lit-css2003/css2003.i",
+          "upstream_path": "c/loop-lit/css2003.i",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/css2003.i",
+          "sha256": "3cc40df30b48f0dde21200c49a8e3c2dcaea3151eb010f51f5a34e59bc04994b",
+          "git_blob": "2556aea3d75548c384fc16079cf4c83349a0a4ab",
+          "bytes": 1226
+        },
+        {
+          "path": "svcomp-loop-lit-css2003/css2003.c",
+          "upstream_path": "c/loop-lit/css2003.c",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/css2003.c",
+          "sha256": "79dbbaf7458c278668d525932c955a520cf9ecf265c0b26a794309ddbbbd5008",
+          "git_blob": "99ef418cfae3a17f4e8cfdccdd5aa81b5ca16993",
+          "bytes": 429
+        },
+        {
+          "path": "svcomp-loop-lit-css2003/properties/termination.prp",
+          "upstream_path": "c/properties/termination.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/termination.prp",
+          "sha256": "1e9ed9441e9f7768516957a8b76e53c94ea717b44e652edefc6cf4b53e5931f9",
+          "git_blob": "cc40b9a2c9d02dfa0aadca756af48537e94afaff",
+          "bytes": 35
+        },
+        {
+          "path": "svcomp-loop-lit-css2003/properties/unreach-call.prp",
+          "upstream_path": "c/properties/unreach-call.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/unreach-call.prp",
+          "sha256": "0c6a90cfc3ad4545225a0537ddc37b8a11ea5a37b906c053bb298b748f810150",
+          "git_blob": "7ae12e84e7ce974f842dd8fd7f6f72dfb3fb341d",
+          "bytes": 53
+        },
+        {
+          "path": "svcomp-loop-lit-css2003/properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-branches.prp",
+          "sha256": "1a5dabd5c80116887833695a6bc7551a1b5e1e42f4e2888144bcf1cff85b9045",
+          "git_blob": "1523f2a2f68001edfb5ac24bcbc175fcd874ed30",
+          "bytes": 56
+        },
+        {
+          "path": "svcomp-loop-lit-css2003/properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-conditions.prp",
+          "sha256": "b63df4ed4241863f8f66a4718e28de35bd1fa167b685621cf0240fe7880851aa",
+          "git_blob": "1e243ea3a9042c4e56e5bd84b1def7ab144cd579",
+          "bytes": 57
+        },
+        {
+          "path": "svcomp-loop-lit-css2003/properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-statements.prp",
+          "sha256": "76b6fc272c83c3067e7316cecaecf36a9608925debeec4e5a280426af6ab625e",
+          "git_blob": "5fec1da6edeb3f7a70639bb4168aaf2f6073f9e5",
+          "bytes": 59
+        },
+        {
+          "path": "svcomp-loop-lit-css2003/LICENSE.txt",
+          "upstream_path": "c/loop-lit/LICENSE.txt",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/LICENSE.txt",
+          "sha256": "8567e6887825f675edfb34ec94edd4e711902c1868239313d684140b12fab732",
+          "git_blob": "ba81f828233ed7d397f86de1bd0d09c5ef97b7bc",
+          "bytes": 28
+        }
+      ],
+      "task_metadata": {
+        "format_version": "2.0",
+        "input_files": "css2003.i",
+        "properties": [
+          {
+            "property_file": "../properties/termination.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/unreach-call.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/coverage-branches.prp"
+          },
+          {
+            "property_file": "../properties/coverage-conditions.prp"
+          },
+          {
+            "property_file": "../properties/coverage-statements.prp"
+          }
+        ],
+        "options": {
+          "language": "C",
+          "data_model": "ILP32"
+        }
+      },
+      "properties": [
+        {
+          "property_file": "../properties/termination.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/termination.prp"
+        },
+        {
+          "property_file": "../properties/unreach-call.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/unreach-call.prp"
+        },
+        {
+          "property_file": "../properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp"
+        },
+        {
+          "property_file": "../properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp"
+        },
+        {
+          "property_file": "../properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp"
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 3,
+        "operators": {
+          "&&": 3,
+          "<=": 4,
+          "<": 1,
+          "+": 4,
+          "-": 1,
+          ">=": 1
+        },
+        "calls": {
+          "__VERIFIER_nondet_int": 1,
+          "__VERIFIER_assert": 1
+        },
+        "types": {
+          "int": 3
+        },
+        "alpha_fingerprint": "8d8f3c9e875587353e493e82c32ce906151225a03cd1171825558178714c79ea",
+        "constant_normalized_family": "2339eb76f25a302c1fe060594f996a4cbd98b6b342aba3faec36ed16c6016aba",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "upstream_expected_verdict": true,
+      "role": "positive_safety_task",
+      "semantics": "Native C; official data model ILP32; unreach-call property.",
+      "license_status": "Retained upstream notices and available license files; see provenance and source headers.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "Native C semantics and C trace execution unsupported by the existing Python experiment pipeline."
+    },
+    {
+      "id": "svcomp-loop-lit-gr2006",
+      "collection": "SV-COMP",
+      "primary_input": "svcomp-loop-lit-gr2006/gr2006.i",
+      "assets": [
+        {
+          "path": "svcomp-loop-lit-gr2006/gr2006.yml",
+          "upstream_path": "c/loop-lit/gr2006.yml",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/gr2006.yml",
+          "sha256": "29a913fcac8d5df04d20eb2e681808ca7997efae7c64235d98f2ffed393e36b4",
+          "git_blob": "a6afc73b23b9ba6221dd73c3e86bf74c6b93240f",
+          "bytes": 489
+        },
+        {
+          "path": "svcomp-loop-lit-gr2006/gr2006.i",
+          "upstream_path": "c/loop-lit/gr2006.i",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/gr2006.i",
+          "sha256": "3ef045eb54c58e8ecfe4972142a43378e1f3b08091dc3d5b7e399cf5703f1724",
+          "git_blob": "da1aa50d29bd9638e2fe120a0ddd8fe5e57ec828",
+          "bytes": 1205
+        },
+        {
+          "path": "svcomp-loop-lit-gr2006/gr2006.c",
+          "upstream_path": "c/loop-lit/gr2006.c",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/gr2006.c",
+          "sha256": "0cce601d3e06b5cd8415f99be251710ece6e8fb7c3e319a09ed18922ee72babd",
+          "git_blob": "86be0c0a44b35bfa1ff41aed2cfd3e749ce11c01",
+          "bytes": 332
+        },
+        {
+          "path": "svcomp-loop-lit-gr2006/properties/termination.prp",
+          "upstream_path": "c/properties/termination.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/termination.prp",
+          "sha256": "1e9ed9441e9f7768516957a8b76e53c94ea717b44e652edefc6cf4b53e5931f9",
+          "git_blob": "cc40b9a2c9d02dfa0aadca756af48537e94afaff",
+          "bytes": 35
+        },
+        {
+          "path": "svcomp-loop-lit-gr2006/properties/unreach-call.prp",
+          "upstream_path": "c/properties/unreach-call.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/unreach-call.prp",
+          "sha256": "0c6a90cfc3ad4545225a0537ddc37b8a11ea5a37b906c053bb298b748f810150",
+          "git_blob": "7ae12e84e7ce974f842dd8fd7f6f72dfb3fb341d",
+          "bytes": 53
+        },
+        {
+          "path": "svcomp-loop-lit-gr2006/properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-branches.prp",
+          "sha256": "1a5dabd5c80116887833695a6bc7551a1b5e1e42f4e2888144bcf1cff85b9045",
+          "git_blob": "1523f2a2f68001edfb5ac24bcbc175fcd874ed30",
+          "bytes": 56
+        },
+        {
+          "path": "svcomp-loop-lit-gr2006/properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-conditions.prp",
+          "sha256": "b63df4ed4241863f8f66a4718e28de35bd1fa167b685621cf0240fe7880851aa",
+          "git_blob": "1e243ea3a9042c4e56e5bd84b1def7ab144cd579",
+          "bytes": 57
+        },
+        {
+          "path": "svcomp-loop-lit-gr2006/properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-statements.prp",
+          "sha256": "76b6fc272c83c3067e7316cecaecf36a9608925debeec4e5a280426af6ab625e",
+          "git_blob": "5fec1da6edeb3f7a70639bb4168aaf2f6073f9e5",
+          "bytes": 59
+        },
+        {
+          "path": "svcomp-loop-lit-gr2006/LICENSE.txt",
+          "upstream_path": "c/loop-lit/LICENSE.txt",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-lit/LICENSE.txt",
+          "sha256": "8567e6887825f675edfb34ec94edd4e711902c1868239313d684140b12fab732",
+          "git_blob": "ba81f828233ed7d397f86de1bd0d09c5ef97b7bc",
+          "bytes": 28
+        }
+      ],
+      "task_metadata": {
+        "format_version": "2.0",
+        "input_files": "gr2006.i",
+        "properties": [
+          {
+            "property_file": "../properties/termination.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/unreach-call.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/coverage-branches.prp"
+          },
+          {
+            "property_file": "../properties/coverage-conditions.prp"
+          },
+          {
+            "property_file": "../properties/coverage-statements.prp"
+          }
+        ],
+        "options": {
+          "language": "C",
+          "data_model": "ILP32"
+        }
+      },
+      "properties": [
+        {
+          "property_file": "../properties/termination.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/termination.prp"
+        },
+        {
+          "property_file": "../properties/unreach-call.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/unreach-call.prp"
+        },
+        {
+          "property_file": "../properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp"
+        },
+        {
+          "property_file": "../properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp"
+        },
+        {
+          "property_file": "../properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp"
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 2,
+        "scalar_declarations": 2,
+        "operators": {
+          "<": 2,
+          "==": 1
+        },
+        "calls": {
+          "__VERIFIER_assert": 1
+        },
+        "types": {
+          "int": 2
+        },
+        "alpha_fingerprint": "defcff72a7790ddee358b5e8a0032c93643cb5ab6f84d4b7d3005418da3c31c6",
+        "constant_normalized_family": "36e424ebc979f0aae9092f6158dccfde825fd20e6a9ee56f98fa6330c0047785",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "upstream_expected_verdict": true,
+      "role": "positive_safety_task",
+      "semantics": "Native C; official data model ILP32; unreach-call property.",
+      "license_status": "Retained upstream notices and available license files; see provenance and source headers.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "Native C semantics and C trace execution unsupported by the existing Python experiment pipeline."
+    },
+    {
+      "id": "svcomp-loop-new-gauss_sum",
+      "collection": "SV-COMP",
+      "primary_input": "svcomp-loop-new-gauss_sum/gauss_sum.i",
+      "assets": [
+        {
+          "path": "svcomp-loop-new-gauss_sum/gauss_sum.yml",
+          "upstream_path": "c/loop-new/gauss_sum.yml",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-new/gauss_sum.yml",
+          "sha256": "5d5903174e1d94505ab32d4574b6d56acc7944f57ef948011b13304b6be27b6a",
+          "git_blob": "f808d2130cecad3a97059a9e4b503c2b35e87307",
+          "bytes": 493
+        },
+        {
+          "path": "svcomp-loop-new-gauss_sum/gauss_sum.i",
+          "upstream_path": "c/loop-new/gauss_sum.i",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-new/gauss_sum.i",
+          "sha256": "ac0c39e955880a6b0806ad5f8add28438e78eb47defb435342badf7c95feaa91",
+          "git_blob": "6aaa003d9fb22106efb1c129bcc13fb7111040ee",
+          "bytes": 1196
+        },
+        {
+          "path": "svcomp-loop-new-gauss_sum/gauss_sum.c",
+          "upstream_path": "c/loop-new/gauss_sum.c",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-new/gauss_sum.c",
+          "sha256": "2db88e217aac653bc90e47c2cf243a0b88137d35775b129af72a24ea92ed6595",
+          "git_blob": "64d29cb4c26719f69fa3f8aeee0388e1710b6e5a",
+          "bytes": 257
+        },
+        {
+          "path": "svcomp-loop-new-gauss_sum/properties/termination.prp",
+          "upstream_path": "c/properties/termination.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/termination.prp",
+          "sha256": "1e9ed9441e9f7768516957a8b76e53c94ea717b44e652edefc6cf4b53e5931f9",
+          "git_blob": "cc40b9a2c9d02dfa0aadca756af48537e94afaff",
+          "bytes": 35
+        },
+        {
+          "path": "svcomp-loop-new-gauss_sum/properties/unreach-call.prp",
+          "upstream_path": "c/properties/unreach-call.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/unreach-call.prp",
+          "sha256": "0c6a90cfc3ad4545225a0537ddc37b8a11ea5a37b906c053bb298b748f810150",
+          "git_blob": "7ae12e84e7ce974f842dd8fd7f6f72dfb3fb341d",
+          "bytes": 53
+        },
+        {
+          "path": "svcomp-loop-new-gauss_sum/properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-branches.prp",
+          "sha256": "1a5dabd5c80116887833695a6bc7551a1b5e1e42f4e2888144bcf1cff85b9045",
+          "git_blob": "1523f2a2f68001edfb5ac24bcbc175fcd874ed30",
+          "bytes": 56
+        },
+        {
+          "path": "svcomp-loop-new-gauss_sum/properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-conditions.prp",
+          "sha256": "b63df4ed4241863f8f66a4718e28de35bd1fa167b685621cf0240fe7880851aa",
+          "git_blob": "1e243ea3a9042c4e56e5bd84b1def7ab144cd579",
+          "bytes": 57
+        },
+        {
+          "path": "svcomp-loop-new-gauss_sum/properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-statements.prp",
+          "sha256": "76b6fc272c83c3067e7316cecaecf36a9608925debeec4e5a280426af6ab625e",
+          "git_blob": "5fec1da6edeb3f7a70639bb4168aaf2f6073f9e5",
+          "bytes": 59
+        },
+        {
+          "path": "svcomp-loop-new-gauss_sum/LICENSE.txt",
+          "upstream_path": "c/loop-new/LICENSE.txt",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-new/LICENSE.txt",
+          "sha256": "8567e6887825f675edfb34ec94edd4e711902c1868239313d684140b12fab732",
+          "git_blob": "ba81f828233ed7d397f86de1bd0d09c5ef97b7bc",
+          "bytes": 28
+        }
+      ],
+      "task_metadata": {
+        "format_version": "2.0",
+        "input_files": "gauss_sum.i",
+        "properties": [
+          {
+            "property_file": "../properties/termination.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/unreach-call.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/coverage-branches.prp"
+          },
+          {
+            "property_file": "../properties/coverage-conditions.prp"
+          },
+          {
+            "property_file": "../properties/coverage-statements.prp"
+          }
+        ],
+        "options": {
+          "language": "C",
+          "data_model": "ILP32"
+        }
+      },
+      "properties": [
+        {
+          "property_file": "../properties/termination.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/termination.prp"
+        },
+        {
+          "property_file": "../properties/unreach-call.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/unreach-call.prp"
+        },
+        {
+          "property_file": "../properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp"
+        },
+        {
+          "property_file": "../properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp"
+        },
+        {
+          "property_file": "../properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp"
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "variable_multiplication",
+          "nondeterminism"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 3,
+        "operators": {
+          "&&": 1,
+          "<=": 3,
+          "+": 2,
+          "==": 1,
+          "*": 2
+        },
+        "calls": {
+          "__VERIFIER_nondet_int": 1,
+          "__VERIFIER_assert": 1
+        },
+        "types": {
+          "int": 3
+        },
+        "alpha_fingerprint": "c6691f16c847ba7cdeb4dad27eb946e13a4a8baa9e06dc296db174892668242f",
+        "constant_normalized_family": "852a1cb9bc778ffe3332a3e76e0daa4599dfaf767b82e97bb7d8b03f22eddc7a",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "upstream_expected_verdict": true,
+      "role": "positive_safety_task",
+      "semantics": "Native C; official data model ILP32; unreach-call property.",
+      "license_status": "Retained upstream notices and available license files; see provenance and source headers.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "Native C semantics and C trace execution unsupported by the existing Python experiment pipeline."
+    },
+    {
+      "id": "svcomp-loop-new-nested-1",
+      "collection": "SV-COMP",
+      "primary_input": "svcomp-loop-new-nested-1/nested-1.i",
+      "assets": [
+        {
+          "path": "svcomp-loop-new-nested-1/nested-1.yml",
+          "upstream_path": "c/loop-new/nested-1.yml",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-new/nested-1.yml",
+          "sha256": "2e3a96dc76e19e3d5e3a355b3e8bd90061fe0d8cfb927f2976317a11b9295b11",
+          "git_blob": "777004f2f6a37a622a45b5a85cc36d322752bb2e",
+          "bytes": 489
+        },
+        {
+          "path": "svcomp-loop-new-nested-1/nested-1.i",
+          "upstream_path": "c/loop-new/nested-1.i",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-new/nested-1.i",
+          "sha256": "3baf312ca85439572472b3c02ed304b3157fa97373d6ada535e5a723c6c0219a",
+          "git_blob": "475cd5eb9d4fe781357e2a43dc291427b770f409",
+          "bytes": 1289
+        },
+        {
+          "path": "svcomp-loop-new-nested-1/nested-1.c",
+          "upstream_path": "c/loop-new/nested-1.c",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-new/nested-1.c",
+          "sha256": "5cd769f3d32b8d5e49a3bd4e11ff8ed7bee86404e25efab0194cdcb50687bc30",
+          "git_blob": "6c1a16d2c1b9976e0e579533a49b318675bd2e9e",
+          "bytes": 349
+        },
+        {
+          "path": "svcomp-loop-new-nested-1/properties/termination.prp",
+          "upstream_path": "c/properties/termination.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/termination.prp",
+          "sha256": "1e9ed9441e9f7768516957a8b76e53c94ea717b44e652edefc6cf4b53e5931f9",
+          "git_blob": "cc40b9a2c9d02dfa0aadca756af48537e94afaff",
+          "bytes": 35
+        },
+        {
+          "path": "svcomp-loop-new-nested-1/properties/unreach-call.prp",
+          "upstream_path": "c/properties/unreach-call.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/unreach-call.prp",
+          "sha256": "0c6a90cfc3ad4545225a0537ddc37b8a11ea5a37b906c053bb298b748f810150",
+          "git_blob": "7ae12e84e7ce974f842dd8fd7f6f72dfb3fb341d",
+          "bytes": 53
+        },
+        {
+          "path": "svcomp-loop-new-nested-1/properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-branches.prp",
+          "sha256": "1a5dabd5c80116887833695a6bc7551a1b5e1e42f4e2888144bcf1cff85b9045",
+          "git_blob": "1523f2a2f68001edfb5ac24bcbc175fcd874ed30",
+          "bytes": 56
+        },
+        {
+          "path": "svcomp-loop-new-nested-1/properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-conditions.prp",
+          "sha256": "b63df4ed4241863f8f66a4718e28de35bd1fa167b685621cf0240fe7880851aa",
+          "git_blob": "1e243ea3a9042c4e56e5bd84b1def7ab144cd579",
+          "bytes": 57
+        },
+        {
+          "path": "svcomp-loop-new-nested-1/properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-statements.prp",
+          "sha256": "76b6fc272c83c3067e7316cecaecf36a9608925debeec4e5a280426af6ab625e",
+          "git_blob": "5fec1da6edeb3f7a70639bb4168aaf2f6073f9e5",
+          "bytes": 59
+        },
+        {
+          "path": "svcomp-loop-new-nested-1/LICENSE.txt",
+          "upstream_path": "c/loop-new/LICENSE.txt",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loop-new/LICENSE.txt",
+          "sha256": "8567e6887825f675edfb34ec94edd4e711902c1868239313d684140b12fab732",
+          "git_blob": "ba81f828233ed7d397f86de1bd0d09c5ef97b7bc",
+          "bytes": 28
+        }
+      ],
+      "task_metadata": {
+        "format_version": "2.0",
+        "input_files": "nested-1.i",
+        "properties": [
+          {
+            "property_file": "../properties/termination.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/unreach-call.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/coverage-branches.prp"
+          },
+          {
+            "property_file": "../properties/coverage-conditions.prp"
+          },
+          {
+            "property_file": "../properties/coverage-statements.prp"
+          }
+        ],
+        "options": {
+          "language": "C",
+          "data_model": "ILP32"
+        }
+      },
+      "properties": [
+        {
+          "property_file": "../properties/termination.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/termination.prp"
+        },
+        {
+          "property_file": "../properties/unreach-call.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/unreach-call.prp"
+        },
+        {
+          "property_file": "../properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp"
+        },
+        {
+          "property_file": "../properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp"
+        },
+        {
+          "property_file": "../properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp"
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "nested_loops",
+          "nondeterminism"
+        ],
+        "loop_count": 2,
+        "maximum_loop_depth": 2,
+        "branch_count": 2,
+        "scalar_declarations": 5,
+        "operators": {
+          "&&": 2,
+          "<=": 4,
+          "<": 2,
+          ">=": 1
+        },
+        "calls": {
+          "__VERIFIER_nondet_int": 2,
+          "__VERIFIER_assert": 1
+        },
+        "types": {
+          "int": 5
+        },
+        "alpha_fingerprint": "366be954503d7b7a083c8bb6c0220b5dc9c06126746ec2199f149ab66e6c1a65",
+        "constant_normalized_family": "a50588a38597cf7c15b6ee3845d91be9d65b0f5eb761814b703a7d9c9c8fb457",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "upstream_expected_verdict": true,
+      "role": "positive_safety_task",
+      "semantics": "Native C; official data model ILP32; unreach-call property.",
+      "license_status": "Retained upstream notices and available license files; see provenance and source headers.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "Native C semantics and C trace execution unsupported by the existing Python experiment pipeline."
+    },
+    {
+      "id": "svcomp-loops-array-2",
+      "collection": "SV-COMP",
+      "primary_input": "svcomp-loops-array-2/array-2.c",
+      "assets": [
+        {
+          "path": "svcomp-loops-array-2/array-2.yml",
+          "upstream_path": "c/loops/array-2.yml",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loops/array-2.yml",
+          "sha256": "21a431a28ed4e9d117fcee8a08cc0efe01ddc091de72b06f88bfa8f1b99ed3c5",
+          "git_blob": "66f997cf3c60fed9a5d0b14d5d9d076cb2e9aa4a",
+          "bytes": 546
+        },
+        {
+          "path": "svcomp-loops-array-2/array-2.c",
+          "upstream_path": "c/loops/array-2.c",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/loops/array-2.c",
+          "sha256": "8df294a242896c5bf5c0de59a6565bdcc2051c441282e921edcd2c4fccba4c24",
+          "git_blob": "f1793229fd07291e9fab5434f1d024a19d9e380d",
+          "bytes": 761
+        },
+        {
+          "path": "svcomp-loops-array-2/properties/termination.prp",
+          "upstream_path": "c/properties/termination.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/termination.prp",
+          "sha256": "1e9ed9441e9f7768516957a8b76e53c94ea717b44e652edefc6cf4b53e5931f9",
+          "git_blob": "cc40b9a2c9d02dfa0aadca756af48537e94afaff",
+          "bytes": 35
+        },
+        {
+          "path": "svcomp-loops-array-2/properties/unreach-call.prp",
+          "upstream_path": "c/properties/unreach-call.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/unreach-call.prp",
+          "sha256": "0c6a90cfc3ad4545225a0537ddc37b8a11ea5a37b906c053bb298b748f810150",
+          "git_blob": "7ae12e84e7ce974f842dd8fd7f6f72dfb3fb341d",
+          "bytes": 53
+        },
+        {
+          "path": "svcomp-loops-array-2/properties/coverage-error-call.prp",
+          "upstream_path": "c/properties/coverage-error-call.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-error-call.prp",
+          "sha256": "647cea8183c78b1d4f20d21ca6fab65f440610a781f42d1f8ada15fce3f2f481",
+          "git_blob": "496ed998fafdc4a6f5e4b927eeb2d196bdc75142",
+          "bytes": 61
+        },
+        {
+          "path": "svcomp-loops-array-2/properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-branches.prp",
+          "sha256": "1a5dabd5c80116887833695a6bc7551a1b5e1e42f4e2888144bcf1cff85b9045",
+          "git_blob": "1523f2a2f68001edfb5ac24bcbc175fcd874ed30",
+          "bytes": 56
+        },
+        {
+          "path": "svcomp-loops-array-2/properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-conditions.prp",
+          "sha256": "b63df4ed4241863f8f66a4718e28de35bd1fa167b685621cf0240fe7880851aa",
+          "git_blob": "1e243ea3a9042c4e56e5bd84b1def7ab144cd579",
+          "bytes": 57
+        },
+        {
+          "path": "svcomp-loops-array-2/properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-statements.prp",
+          "sha256": "76b6fc272c83c3067e7316cecaecf36a9608925debeec4e5a280426af6ab625e",
+          "git_blob": "5fec1da6edeb3f7a70639bb4168aaf2f6073f9e5",
+          "bytes": 59
+        }
+      ],
+      "task_metadata": {
+        "format_version": "2.0",
+        "input_files": "array-2.c",
+        "properties": [
+          {
+            "property_file": "../properties/termination.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/unreach-call.prp",
+            "expected_verdict": false
+          },
+          {
+            "property_file": "../properties/coverage-error-call.prp"
+          },
+          {
+            "property_file": "../properties/coverage-branches.prp"
+          },
+          {
+            "property_file": "../properties/coverage-conditions.prp"
+          },
+          {
+            "property_file": "../properties/coverage-statements.prp"
+          }
+        ],
+        "options": {
+          "language": "C",
+          "data_model": "ILP32"
+        }
+      },
+      "properties": [
+        {
+          "property_file": "../properties/termination.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/termination.prp"
+        },
+        {
+          "property_file": "../properties/unreach-call.prp",
+          "expected_verdict": false,
+          "upstream_path": "c/properties/unreach-call.prp"
+        },
+        {
+          "property_file": "../properties/coverage-error-call.prp",
+          "upstream_path": "c/properties/coverage-error-call.prp"
+        },
+        {
+          "property_file": "../properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp"
+        },
+        {
+          "property_file": "../properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp"
+        },
+        {
+          "property_file": "../properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp"
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "arrays",
+          "nondeterminism",
+          "unsigned_machine_integers"
+        ],
+        "loop_count": 1,
+        "maximum_loop_depth": 1,
+        "branch_count": 1,
+        "scalar_declarations": 5,
+        "operators": {
+          "<": 1,
+          "<=": 1,
+          ">": 1
+        },
+        "calls": {
+          "__VERIFIER_nondet_int": 2,
+          "__VERIFIER_assert": 1
+        },
+        "types": {
+          "unsigned int": 3,
+          "int": 2
+        },
+        "alpha_fingerprint": "a6608298c362bb321a090eea416350e90ec6e60ce8f156f4b37cd532f02ed1e5",
+        "constant_normalized_family": "addd90a497a79861dc80abd04499e913a0209946ffe3a013b52efb2a98a258fa",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "upstream_expected_verdict": false,
+      "role": "negative_safety_control",
+      "semantics": "Native C; official data model ILP32; unreach-call property.",
+      "license_status": "Retained upstream notices and available license files; see provenance and source headers.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "Native C semantics and C trace execution unsupported by the existing Python experiment pipeline."
+    },
+    {
+      "id": "svcomp-array-examples-standard_copy1_ground-1",
+      "collection": "SV-COMP",
+      "primary_input": "svcomp-array-examples-standard_copy1_ground-1/standard_copy1_ground-1.i",
+      "assets": [
+        {
+          "path": "svcomp-array-examples-standard_copy1_ground-1/standard_copy1_ground-1.yml",
+          "upstream_path": "c/array-examples/standard_copy1_ground-1.yml",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/array-examples/standard_copy1_ground-1.yml",
+          "sha256": "5cf810cd2191e2a795ecdc41a717492dc905d2cd06d1f82f5c2fc2c6d1f897c4",
+          "git_blob": "70c7a0eae6de36ac3f7824f1c2acac464d045d23",
+          "bytes": 502
+        },
+        {
+          "path": "svcomp-array-examples-standard_copy1_ground-1/standard_copy1_ground-1.i",
+          "upstream_path": "c/array-examples/standard_copy1_ground-1.i",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/array-examples/standard_copy1_ground-1.i",
+          "sha256": "5b1ea2b89c0210def4460c68ce885cb310645908c528d57c04841cf488f85c6b",
+          "git_blob": "052e7b83ee1a1be2d20df905362f5d925a3b4a03",
+          "bytes": 1193
+        },
+        {
+          "path": "svcomp-array-examples-standard_copy1_ground-1/standard_copy1_ground-1.c",
+          "upstream_path": "c/array-examples/standard_copy1_ground-1.c",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/array-examples/standard_copy1_ground-1.c",
+          "sha256": "474e46870c29efaea59fc631aee6f06d1f7b9249b84ccf19682ba9d9a186ebc2",
+          "git_blob": "4447b5513b5a77d4483e09f65d0d3a4cf8af4485",
+          "bytes": 515
+        },
+        {
+          "path": "svcomp-array-examples-standard_copy1_ground-1/properties/no-overflow.prp",
+          "upstream_path": "c/properties/no-overflow.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/no-overflow.prp",
+          "sha256": "e82f5222c466476cc45565fc39e73119d8512de62584390eb0c3051f3d4ee602",
+          "git_blob": "26c5bded7af2f0ef083f6b79149516c915de7b7f",
+          "bytes": 42
+        },
+        {
+          "path": "svcomp-array-examples-standard_copy1_ground-1/properties/unreach-call.prp",
+          "upstream_path": "c/properties/unreach-call.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/unreach-call.prp",
+          "sha256": "0c6a90cfc3ad4545225a0537ddc37b8a11ea5a37b906c053bb298b748f810150",
+          "git_blob": "7ae12e84e7ce974f842dd8fd7f6f72dfb3fb341d",
+          "bytes": 53
+        },
+        {
+          "path": "svcomp-array-examples-standard_copy1_ground-1/properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-branches.prp",
+          "sha256": "1a5dabd5c80116887833695a6bc7551a1b5e1e42f4e2888144bcf1cff85b9045",
+          "git_blob": "1523f2a2f68001edfb5ac24bcbc175fcd874ed30",
+          "bytes": 56
+        },
+        {
+          "path": "svcomp-array-examples-standard_copy1_ground-1/properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-conditions.prp",
+          "sha256": "b63df4ed4241863f8f66a4718e28de35bd1fa167b685621cf0240fe7880851aa",
+          "git_blob": "1e243ea3a9042c4e56e5bd84b1def7ab144cd579",
+          "bytes": 57
+        },
+        {
+          "path": "svcomp-array-examples-standard_copy1_ground-1/properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-statements.prp",
+          "sha256": "76b6fc272c83c3067e7316cecaecf36a9608925debeec4e5a280426af6ab625e",
+          "git_blob": "5fec1da6edeb3f7a70639bb4168aaf2f6073f9e5",
+          "bytes": 59
+        },
+        {
+          "path": "svcomp-array-examples-standard_copy1_ground-1/LICENSE.txt",
+          "upstream_path": "c/array-examples/LICENSE.txt",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/array-examples/LICENSE.txt",
+          "sha256": "8567e6887825f675edfb34ec94edd4e711902c1868239313d684140b12fab732",
+          "git_blob": "ba81f828233ed7d397f86de1bd0d09c5ef97b7bc",
+          "bytes": 28
+        }
+      ],
+      "task_metadata": {
+        "format_version": "2.0",
+        "input_files": "standard_copy1_ground-1.i",
+        "properties": [
+          {
+            "property_file": "../properties/no-overflow.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/unreach-call.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/coverage-branches.prp"
+          },
+          {
+            "property_file": "../properties/coverage-conditions.prp"
+          },
+          {
+            "property_file": "../properties/coverage-statements.prp"
+          }
+        ],
+        "options": {
+          "language": "C",
+          "data_model": "ILP32"
+        }
+      },
+      "properties": [
+        {
+          "property_file": "../properties/no-overflow.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/no-overflow.prp"
+        },
+        {
+          "property_file": "../properties/unreach-call.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/unreach-call.prp"
+        },
+        {
+          "property_file": "../properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp"
+        },
+        {
+          "property_file": "../properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp"
+        },
+        {
+          "property_file": "../properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp"
+        }
+      ],
+      "inventory": {
+        "features": [
+          "arrays",
+          "nondeterminism"
+        ],
+        "loop_count": 3,
+        "maximum_loop_depth": 1,
+        "branch_count": 0,
+        "scalar_declarations": 5,
+        "operators": {
+          "<": 3,
+          "==": 1
+        },
+        "calls": {
+          "__VERIFIER_nondet_int": 1,
+          "__VERIFIER_assert": 1
+        },
+        "types": {
+          "int": 5
+        },
+        "alpha_fingerprint": "45c006030344d79809c4850a9bf6ecdca6a02e333039f8e434fc334ae00a76a8",
+        "constant_normalized_family": "d81a20eec8a6747fb74326c8c51e479195cd4a7846b276cae51b1a9aab73ab72",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "upstream_expected_verdict": true,
+      "role": "positive_safety_task",
+      "semantics": "Native C; official data model ILP32; unreach-call property.",
+      "license_status": "Retained upstream notices and available license files; see provenance and source headers.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "Native C semantics and C trace execution unsupported by the existing Python experiment pipeline."
+    },
+    {
+      "id": "svcomp-array-examples-sorting_bubblesort_ground-1",
+      "collection": "SV-COMP",
+      "primary_input": "svcomp-array-examples-sorting_bubblesort_ground-1/sorting_bubblesort_ground-1.i",
+      "assets": [
+        {
+          "path": "svcomp-array-examples-sorting_bubblesort_ground-1/sorting_bubblesort_ground-1.yml",
+          "upstream_path": "c/array-examples/sorting_bubblesort_ground-1.yml",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/array-examples/sorting_bubblesort_ground-1.yml",
+          "sha256": "709f59103ba2435b941e02385a556b91719520ea62f5fe284d1635deb525a6f9",
+          "git_blob": "73167376424d3edff964bb232047f1d31f499b99",
+          "bytes": 510
+        },
+        {
+          "path": "svcomp-array-examples-sorting_bubblesort_ground-1/sorting_bubblesort_ground-1.i",
+          "upstream_path": "c/array-examples/sorting_bubblesort_ground-1.i",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/array-examples/sorting_bubblesort_ground-1.i",
+          "sha256": "68585835b92043bfb2f3c62590e96ff685993869f8a251aecd9fe4c8aaea0e1e",
+          "git_blob": "3ff0070049b2a1acb1c219e703c9303dfa86e443",
+          "bytes": 1411
+        },
+        {
+          "path": "svcomp-array-examples-sorting_bubblesort_ground-1/sorting_bubblesort_ground-1.c",
+          "upstream_path": "c/array-examples/sorting_bubblesort_ground-1.c",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/array-examples/sorting_bubblesort_ground-1.c",
+          "sha256": "a3a40ecb0f43816a11f48a3ff017b1304ecc099d452c0c8165da169bd722f0a6",
+          "git_blob": "fffdc8bdc165bb085ad4ddd35caa17fe31c979e4",
+          "bytes": 725
+        },
+        {
+          "path": "svcomp-array-examples-sorting_bubblesort_ground-1/properties/no-overflow.prp",
+          "upstream_path": "c/properties/no-overflow.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/no-overflow.prp",
+          "sha256": "e82f5222c466476cc45565fc39e73119d8512de62584390eb0c3051f3d4ee602",
+          "git_blob": "26c5bded7af2f0ef083f6b79149516c915de7b7f",
+          "bytes": 42
+        },
+        {
+          "path": "svcomp-array-examples-sorting_bubblesort_ground-1/properties/unreach-call.prp",
+          "upstream_path": "c/properties/unreach-call.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/unreach-call.prp",
+          "sha256": "0c6a90cfc3ad4545225a0537ddc37b8a11ea5a37b906c053bb298b748f810150",
+          "git_blob": "7ae12e84e7ce974f842dd8fd7f6f72dfb3fb341d",
+          "bytes": 53
+        },
+        {
+          "path": "svcomp-array-examples-sorting_bubblesort_ground-1/properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-branches.prp",
+          "sha256": "1a5dabd5c80116887833695a6bc7551a1b5e1e42f4e2888144bcf1cff85b9045",
+          "git_blob": "1523f2a2f68001edfb5ac24bcbc175fcd874ed30",
+          "bytes": 56
+        },
+        {
+          "path": "svcomp-array-examples-sorting_bubblesort_ground-1/properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-conditions.prp",
+          "sha256": "b63df4ed4241863f8f66a4718e28de35bd1fa167b685621cf0240fe7880851aa",
+          "git_blob": "1e243ea3a9042c4e56e5bd84b1def7ab144cd579",
+          "bytes": 57
+        },
+        {
+          "path": "svcomp-array-examples-sorting_bubblesort_ground-1/properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/properties/coverage-statements.prp",
+          "sha256": "76b6fc272c83c3067e7316cecaecf36a9608925debeec4e5a280426af6ab625e",
+          "git_blob": "5fec1da6edeb3f7a70639bb4168aaf2f6073f9e5",
+          "bytes": 59
+        },
+        {
+          "path": "svcomp-array-examples-sorting_bubblesort_ground-1/LICENSE.txt",
+          "upstream_path": "c/array-examples/LICENSE.txt",
+          "repository": "sv-benchmarks",
+          "commit": "7efe28dd29576b46927b7a34e8f742bd90966a75",
+          "url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/7efe28dd29576b46927b7a34e8f742bd90966a75/c/array-examples/LICENSE.txt",
+          "sha256": "8567e6887825f675edfb34ec94edd4e711902c1868239313d684140b12fab732",
+          "git_blob": "ba81f828233ed7d397f86de1bd0d09c5ef97b7bc",
+          "bytes": 28
+        }
+      ],
+      "task_metadata": {
+        "format_version": "2.0",
+        "input_files": "sorting_bubblesort_ground-1.i",
+        "properties": [
+          {
+            "property_file": "../properties/no-overflow.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/unreach-call.prp",
+            "expected_verdict": true
+          },
+          {
+            "property_file": "../properties/coverage-branches.prp"
+          },
+          {
+            "property_file": "../properties/coverage-conditions.prp"
+          },
+          {
+            "property_file": "../properties/coverage-statements.prp"
+          }
+        ],
+        "options": {
+          "language": "C",
+          "data_model": "ILP32"
+        }
+      },
+      "properties": [
+        {
+          "property_file": "../properties/no-overflow.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/no-overflow.prp"
+        },
+        {
+          "property_file": "../properties/unreach-call.prp",
+          "expected_verdict": true,
+          "upstream_path": "c/properties/unreach-call.prp"
+        },
+        {
+          "property_file": "../properties/coverage-branches.prp",
+          "upstream_path": "c/properties/coverage-branches.prp"
+        },
+        {
+          "property_file": "../properties/coverage-conditions.prp",
+          "upstream_path": "c/properties/coverage-conditions.prp"
+        },
+        {
+          "property_file": "../properties/coverage-statements.prp",
+          "upstream_path": "c/properties/coverage-statements.prp"
+        }
+      ],
+      "inventory": {
+        "features": [
+          "conditional_branches",
+          "arrays",
+          "nested_loops",
+          "nondeterminism"
+        ],
+        "loop_count": 5,
+        "maximum_loop_depth": 2,
+        "branch_count": 1,
+        "scalar_declarations": 7,
+        "operators": {
+          "<": 4,
+          ">": 1,
+          "-": 3,
+          "+": 2,
+          "<=": 1
+        },
+        "calls": {
+          "__VERIFIER_nondet_int": 1,
+          "__VERIFIER_assert": 1
+        },
+        "types": {
+          "int": 7
+        },
+        "alpha_fingerprint": "f11b3a7b1d947a878649dd8d1d0f18d2bff5e07be8ac05106b70f21f443f63bd",
+        "constant_normalized_family": "647bb62d7390c4d65b598671921e59b6aca15d3c8f42ee449cae7dfdfda17a39",
+        "inventory_semantics": "Main-function AST only; GNU attributes ignored for inventory, not verification. No C execution or C-to-Python translation."
+      },
+      "upstream_expected_verdict": true,
+      "role": "positive_safety_task",
+      "semantics": "Native C; official data model ILP32; unreach-call property.",
+      "license_status": "Retained upstream notices and available license files; see provenance and source headers.",
+      "llm_run_ready": false,
+      "blocking_pipeline_gap": "Native C semantics and C trace execution unsupported by the existing Python experiment pipeline."
+    }
+  ],
+  "prompt_policy": "No prompts generated. Source comments/annotations and solver certificates must not become demonstrations or test answers."
+}

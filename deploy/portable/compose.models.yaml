@@ -1,0 +1,10 @@
+# Reuse a transferred or existing cache without modifying its weights/manifests.
+services:
+  ollama:
+    volumes:
+      - type: bind
+        source: ${LOOPS_MODEL_DIR:?Set LOOPS_MODEL_DIR to the models directory containing blobs and manifests}
+        target: /root/.ollama/models
+        read_only: true
+        bind:
+          create_host_path: false
